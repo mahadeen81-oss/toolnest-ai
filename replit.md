@@ -1,10 +1,11 @@
-# [Project name]
+# Blank Node.js Project
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An empty Node.js starter ready for your own files.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm start` — run the starter server
+- `pnpm dev` — run the starter server with file watching
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
