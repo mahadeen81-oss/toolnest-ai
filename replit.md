@@ -1,45 +1,45 @@
-# Blank Node.js Project
+# ToolNest AI
 
-An empty Node.js starter ready for your own files.
+An AI-powered toolkit for everyday writing, content creation, and productivity.
 
 ## Run & Operate
 
-- `pnpm start` — run the starter server
-- `pnpm dev` — run the starter server with file watching
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- `pnpm dev` — run the app in development
+- `pnpm build` — create a production build
+- `pnpm start` — run the production build
+- Required env: `GEMINI_API_KEY` for the AI generation tools
 
 ## Stack
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Next.js 14 App Router
+- React 18 and TypeScript
+- Tailwind CSS
+- Gemini API integration through a server-side route
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `app/` — routes and page UI
+- `components/` — shared interface components
+- `components/tools/` — reusable AI tool runner
+- `lib/tools-config.ts` — tool metadata and configuration
+- `lib/gemini.ts` — server-side Gemini prompt and API logic
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- AI requests run through one server-side API route so the API key stays private.
+- The shared tool runner keeps the individual tool pages consistent and easy to extend.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+ToolNest AI provides a searchable directory of writing and productivity tools, including AI writing, rewriting, summarization, title generation, idea generation, social post generation, and YouTube script generation.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+No additional preferences recorded.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Copy `.env.example` to `.env.local` and add a valid `GEMINI_API_KEY` before using generation tools.
 
 ## Pointers
 
