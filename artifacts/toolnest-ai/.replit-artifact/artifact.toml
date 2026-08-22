@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "ToolNest AI"
+description = "An AI-powered toolkit for everyday writing, content creation, and productivity."
+version = "1.0.0"
+id = "artifacts/toolnest-ai"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21217
+
+[services.development]
+run = "pnpm --filter @workspace/toolnest-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/toolnest-ai", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/toolnest-ai/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21217"
+BASE_PATH = "/"
