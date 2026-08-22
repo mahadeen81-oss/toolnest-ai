@@ -79,6 +79,10 @@ Return them as a numbered list from 1 to 10, one title per line, no extra commen
 
 export async function callGemini(prompt: string): Promise<string> {
   const apiKey = process.env.GEMINI_API_KEY;
+  console.info(
+    "[gemini] GEMINI_API_KEY length:",
+    apiKey?.length ?? 0,
+  );
   if (!apiKey) {
     throw new Error(
       "GEMINI_API_KEY is not set. Add it to .env.local on the server (never in client code)."
