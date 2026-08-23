@@ -90,19 +90,40 @@ export async function callGemini(prompt: string): Promise<string> {
   }
 
   const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+  const requestBody = {
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: {
+      temperature: 0.7,
+      maxOutputTokens: 1024,
+    },
+  };
 
-  const response = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 1024,
+  async function requestModel(modelName: string) {
+    return fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(requestBody),
       },
-    }),
-  });
+    );
+  }
+
+  let response = await requestModel(model);
+
+  if (!response.ok) {
+    const errBody = await response.text();
+    if (
+      response.status === 404 &&
+      model === "gemini-2.5-flash" &&
+      errBody.includes("gemini-3.6-flash")
+    ) {
+      console.info("[gemini] Retrying with provider-recommended model: gemini-3.6-flash");
+      response = await requestModel("gemini-3.6-flash");
+    } else {
+      throw new Error(`Gemini API error (${response.status}): ${errBody}`);
+    }
+  }
 
   if (!response.ok) {
     const errBody = await response.text();
