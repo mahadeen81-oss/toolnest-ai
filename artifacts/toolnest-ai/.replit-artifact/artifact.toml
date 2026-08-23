@@ -16,12 +16,8 @@ run = "pnpm --filter @workspace/toolnest-ai run dev"
 
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/toolnest-ai", "run", "build" ]
-serve = "static"
-publicDir = "artifacts/toolnest-ai/dist/public"
+run = "pnpm --filter @workspace/toolnest-ai run start"
 
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
 
 [services.env]
 PORT = "21217"
