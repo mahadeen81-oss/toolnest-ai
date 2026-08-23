@@ -1,0 +1,1 @@
+- [Gemini generation compatibility](gemini-generation-compatibility.md) — keep generation settings conservative when a provider model rejects optional thinking controls.
