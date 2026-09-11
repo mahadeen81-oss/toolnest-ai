@@ -57,6 +57,30 @@ export const TOOLS: ToolMeta[] = [
     category: "Content Creation",
     icon: "🏷️",
   },
+  {
+    id: "resume-bullet-generator",
+    slug: "resume-bullet-generator",
+    name: "Resume Bullet Point Generator",
+    description: "Turn your job duties into strong, achievement-focused resume bullet points.",
+    category: "Productivity",
+    icon: "📄",
+  },
+  {
+    id: "grammar-checker",
+    slug: "grammar-checker",
+    name: "Grammar Checker",
+    description: "Check your text for grammar, spelling and punctuation issues, with corrections explained.",
+    category: "Writing",
+    icon: "✓",
+  },
+  {
+    id: "email-reply-generator",
+    slug: "email-reply-generator",
+    name: "Email Reply Generator",
+    description: "Draft a professional email reply based on the message you received and what you want to say.",
+    category: "Productivity",
+    icon: "✉️",
+  },
 ];
 
 export function getToolBySlug(slug: string): ToolMeta | undefined {

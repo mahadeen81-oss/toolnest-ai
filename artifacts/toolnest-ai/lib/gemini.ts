@@ -16,7 +16,10 @@ type ToolId =
   | "social-media-post-generator"
   | "youtube-script-generator"
   | "idea-generator"
-  | "title-generator";
+  | "title-generator"
+  | "resume-bullet-generator"
+  | "grammar-checker"
+  | "email-reply-generator";
 
 export interface GenerateInputs {
   [key: string]: string;
@@ -71,6 +74,37 @@ Return them as a numbered list from 1 to 10, one idea per line, no extra comment
     case "title-generator":
       return `Generate exactly 10 engaging, click-worthy but non-clickbait titles for content about: ${inputs.topic}.
 Return them as a numbered list from 1 to 10, one title per line, no extra commentary.`;
+
+    case "resume-bullet-generator":
+      return `Generate 5-7 strong, achievement-oriented resume bullet points for the job title below, based on the responsibilities or achievements described.
+Use action verbs, quantify results where reasonable, keep each bullet to one line, and return the result as a numbered list.
+Job title: ${inputs.job_title}
+Responsibilities or achievements:
+"""
+${inputs.responsibilities}
+"""`;
+
+    case "grammar-checker":
+      return `Check the following text for grammar, spelling, and punctuation errors.
+Return the corrected version first, then a short bullet list explaining each change made.
+If there are no errors, say so clearly after the original text.
+Text:
+"""
+${inputs.text}
+"""`;
+
+    case "email-reply-generator":
+      return `Write a clear, well-structured email reply based on the original email and the key points the user wants to communicate.
+Tone: ${inputs.tone || "Professional"}.
+Do not include a subject line; return only the email body.
+Original email:
+"""
+${inputs.original_email}
+"""
+Key points to include:
+"""
+${inputs.key_points}
+"""`;
 
     default:
       throw new Error(`Unknown toolId: ${toolId}`);
@@ -149,6 +183,9 @@ export const VALID_TOOL_IDS: ToolId[] = [
   "youtube-script-generator",
   "idea-generator",
   "title-generator",
+  "resume-bullet-generator",
+  "grammar-checker",
+  "email-reply-generator",
 ];
 
 export function isValidToolId(id: string): id is ToolId {
