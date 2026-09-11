@@ -20,6 +20,7 @@ export default function Footer() {
           <h4 className="text-sm font-semibold text-slate-900">Product</h4>
           <ul className="mt-3 space-y-2 text-sm text-slate-500">
             <li><Link href="/tools" className="hover:text-brand-600">AI Tools</Link></li>
+            <li><Link href="/blog" className="hover:text-brand-600">Blog</Link></li>
             <li><Link href="/about" className="hover:text-brand-600">About</Link></li>
             <li><Link href="/contact" className="hover:text-brand-600">Contact</Link></li>
           </ul>

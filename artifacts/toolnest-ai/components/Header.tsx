@@ -14,6 +14,7 @@ export default function Header() {
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 sm:flex">
           <Link href="/" className="hover:text-brand-600">Home</Link>
           <Link href="/tools" className="hover:text-brand-600">AI Tools</Link>
+          <Link href="/blog" className="hover:text-brand-600">Blog</Link>
           <Link href="/about" className="hover:text-brand-600">About</Link>
           <Link href="/contact" className="hover:text-brand-600">Contact</Link>
         </nav>
