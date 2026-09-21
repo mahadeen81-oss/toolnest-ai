@@ -13,7 +13,7 @@ const articles = [
     excerpt:
       "Learn a few simple ways to give AI better direction, from adding context to refining the first result.",
     icon: "✍️",
-    color: "bg-brand-50",
+    color: "bg-gradient-to-br from-violet-100 via-fuchsia-50 to-white",
   },
   {
     href: "/blog/ai-tools-for-content-creators",
@@ -21,7 +21,7 @@ const articles = [
     excerpt:
       "See how creators can use AI for social posts, research summaries, scripts, ideas, and audience-friendly rewrites.",
     icon: "⚡",
-    color: "bg-amber-50",
+    color: "bg-gradient-to-br from-amber-100 via-orange-50 to-white",
   },
   {
     href: "/blog/ai-generated-content-review-tips",
@@ -29,7 +29,7 @@ const articles = [
     excerpt:
       "AI can help you move faster, but a thoughtful human review is what makes the final content accurate and useful.",
     icon: "✓",
-    color: "bg-emerald-50",
+    color: "bg-gradient-to-br from-teal-100 via-emerald-50 to-white",
   },
 ];
 
@@ -37,10 +37,10 @@ export default function BlogPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
       <div className="max-w-2xl">
-        <span className="inline-block rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700">
+        <span className="inline-block rounded-full bg-gradient-to-r from-brand-500 to-indigo-600 px-3 py-1 text-xs font-semibold text-white shadow-sm">
           ToolNest AI Blog
         </span>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           Practical ideas for working with AI
         </h1>
         <p className="mt-3 text-base leading-7 text-slate-500">
@@ -53,10 +53,10 @@ export default function BlogPage() {
         {articles.map((article) => (
           <article
             key={article.href}
-            className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+            className="flex h-full flex-col overflow-hidden rounded-3xl border border-violet-100 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-violet-200 hover:shadow-xl"
           >
             <div className={`flex h-40 items-center justify-center ${article.color}`}>
-              <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-3xl shadow-sm">
+              <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-3xl shadow-md">
                 {article.icon}
               </span>
             </div>

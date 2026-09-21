@@ -14,10 +14,10 @@ export default function BetterPromptsPage() {
         &larr; Back to Blog
       </Link>
       <div className="mt-6">
-        <span className="inline-block rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700">
+        <span className="inline-block rounded-full bg-gradient-to-r from-brand-500 to-indigo-600 px-3 py-1 text-xs font-semibold text-white shadow-sm">
           Writing tips
         </span>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           How to Write Better Prompts for AI Writing Tools
         </h1>
         <p className="mt-4 text-base leading-7 text-slate-500">

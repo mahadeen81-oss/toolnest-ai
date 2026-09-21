@@ -14,10 +14,10 @@ export default function ContentCreatorsPage() {
         &larr; Back to Blog
       </Link>
       <div className="mt-6">
-        <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+        <span className="inline-block rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
           Content creation
         </span>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           5 Ways AI Tools Can Speed Up Your Content Workflow
         </h1>
         <p className="mt-4 text-base leading-7 text-slate-500">

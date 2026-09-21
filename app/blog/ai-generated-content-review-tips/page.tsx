@@ -14,10 +14,10 @@ export default function ReviewTipsPage() {
         &larr; Back to Blog
       </Link>
       <div className="mt-6">
-        <span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
+        <span className="inline-block rounded-full bg-gradient-to-r from-teal-400 to-emerald-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
           Responsible AI use
         </span>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           Why You Should Always Review AI-Generated Content
         </h1>
         <p className="mt-4 text-base leading-7 text-slate-500">

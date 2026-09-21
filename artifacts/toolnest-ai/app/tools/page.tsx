@@ -25,25 +25,25 @@ export default function ToolsPage() {
   }, [query, category]);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-      <div className="mb-8">
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+      <div className="mb-10">
         <h1 className="text-3xl font-bold text-slate-900">AI Tools</h1>
         <p className="mt-2 text-slate-500">
-          Browse every tool in one place. New ones are added regularly.
+          Browse all {TOOLS.length} tools in one place. New ones are added regularly.
         </p>
       </div>
 
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
         <SearchBar value={query} onChange={setQuery} />
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 sm:pt-1">
           {CATEGORIES.map((c) => (
             <button
               key={c}
               onClick={() => setCategory(c)}
               className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
                 category === c
-                  ? "bg-brand-500 text-white"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                    ? "bg-gradient-to-r from-brand-500 to-indigo-600 text-white shadow-sm"
+                    : "bg-slate-100 text-slate-600 hover:bg-violet-100"
               }`}
             >
               {c}
@@ -52,7 +52,7 @@ export default function ToolsPage() {
         </div>
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-4">
+      <div className="mt-10 grid gap-8 lg:grid-cols-4">
         <div className="lg:col-span-3">
           {filtered.length === 0 ? (
             <p className="text-sm text-slate-500">No tools match your filters.</p>
@@ -64,7 +64,7 @@ export default function ToolsPage() {
             </div>
           )}
         </div>
-        <aside className="lg:col-span-1">
+        <aside className="lg:sticky lg:top-24 lg:col-span-1 lg:self-start">
           <AdPlaceholder variant="sidebar" />
         </aside>
       </div>
