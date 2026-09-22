@@ -7,21 +7,26 @@ import ToolCard from "@/components/ToolCard";
 import SearchBar from "@/components/SearchBar";
 import AdPlaceholder from "@/components/AdPlaceholder";
 
+const CATEGORIES = ["All", ...Array.from(new Set(TOOLS.map((t) => t.category)))];
+
 export default function HomePage() {
   const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("All");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return TOOLS;
     return TOOLS.filter(
       (t) =>
-        t.name.toLowerCase().includes(q) ||
-        t.description.toLowerCase().includes(q) ||
-        t.category.toLowerCase().includes(q)
+        (!q ||
+          t.name.toLowerCase().includes(q) ||
+          t.description.toLowerCase().includes(q) ||
+          t.category.toLowerCase().includes(q)) &&
+        (category === "All" || t.category === category)
     );
-  }, [query]);
+  }, [query, category]);
 
   const featured = TOOLS.slice(0, 3);
+  const displayedTools = !query.trim() && category === "All" ? featured : filtered;
 
   return (
     <div>
@@ -54,6 +59,48 @@ export default function HomePage() {
 
           <div className="mx-auto mt-12 max-w-xl">
             <SearchBar value={query} onChange={setQuery} placeholder="Search AI tools, e.g. 'summarize' or 'titles'" />
+            <div className="mt-4 flex flex-wrap justify-center gap-2">
+              {CATEGORIES.map((c) => (
+                <button
+                  key={c}
+                  onClick={() => setCategory(c)}
+                  className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
+                    category === c
+                      ? "bg-gradient-to-r from-brand-500 to-indigo-600 text-white shadow-sm"
+                      : "bg-slate-100 text-slate-600 hover:bg-violet-100"
+                  }`}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="border-b border-violet-100 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <h2 className="text-center text-2xl font-bold text-slate-900">How it works</h2>
+          <div className="mt-8 grid gap-5 sm:grid-cols-3">
+            {[
+              { step: "1", title: "Write your topic", icon: "✍️" },
+              { step: "2", title: "Choose a tool", icon: "🧰" },
+              { step: "3", title: "Get your result", icon: "✨" },
+            ].map((item) => (
+              <div
+                key={item.step}
+                className="relative rounded-3xl border border-violet-100 bg-gradient-to-br from-violet-50/80 via-white to-cyan-50/60 p-6 text-center shadow-sm"
+              >
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-indigo-600 text-xl text-white shadow-md">
+                  {item.icon}
+                </div>
+                <div className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-brand-600">
+                  Step {item.step}
+                </div>
+                <h3 className="mt-2 font-semibold text-slate-900">{item.title}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -66,20 +113,20 @@ export default function HomePage() {
         <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div className="mb-8 flex items-end justify-between">
           <h2 className="text-2xl font-bold text-slate-900">
-            {query ? "Search results" : "Featured tools"}
+            {query || category !== "All" ? "Filtered tools" : "Featured tools"}
           </h2>
-          {!query && (
+          {!query && category === "All" && (
             <Link href="/tools" className="text-sm font-semibold text-brand-600 hover:underline">
               View all tools &rarr;
             </Link>
           )}
         </div>
 
-        {(query ? filtered : featured).length === 0 ? (
+        {displayedTools.length === 0 ? (
           <p className="text-sm text-slate-500">No tools match your search yet. Try a different keyword.</p>
         ) : (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {(query ? filtered : featured).map((tool) => (
+            {displayedTools.map((tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))}
           </div>
