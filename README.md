@@ -71,7 +71,7 @@ npm start
   component touches it.
 - When deploying (Vercel, etc.), set `GEMINI_API_KEY` as a server-side
   environment variable in your hosting dashboard, not in any client config.
-- `GEMINI_MODEL` is optional and defaults to `gemini-1.5-flash`. Check
+- `GEMINI_MODEL` is optional and defaults to `gemini-3.8-flash`. Check
   [ai.google.dev](https://ai.google.dev) for the current recommended model
   name before you launch, since Google updates these over time.
 

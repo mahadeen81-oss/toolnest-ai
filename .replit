@@ -24,5 +24,5 @@ channel = "stable-25_05"
 [userenv]
 
 [userenv.shared]
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = "gemini-3.8-flash"
 NEXT_PUBLIC_GA_MEASUREMENT_ID = "G-PK8KCHDYWV"

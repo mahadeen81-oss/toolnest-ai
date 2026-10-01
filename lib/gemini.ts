@@ -123,7 +123,8 @@ export async function callGemini(prompt: string): Promise<string> {
     );
   }
 
-  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+  const defaultModel = "gemini-3.8-flash";
+  const model = process.env.GEMINI_MODEL || defaultModel;
   const requestBody = {
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: {
@@ -149,11 +150,11 @@ export async function callGemini(prompt: string): Promise<string> {
     const errBody = await response.text();
     if (
       response.status === 404 &&
-      model === "gemini-2.5-flash" &&
-      errBody.includes("gemini-3.6-flash")
+      model !== defaultModel &&
+      errBody.includes(defaultModel)
     ) {
-      console.info("[gemini] Retrying with provider-recommended model: gemini-3.6-flash");
-      response = await requestModel("gemini-3.6-flash");
+      console.info(`[gemini] Retrying with provider-recommended model: ${defaultModel}`);
+      response = await requestModel(defaultModel);
     } else {
       throw new Error(`Gemini API error (${response.status}): ${errBody}`);
     }
