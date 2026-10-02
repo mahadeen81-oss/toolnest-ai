@@ -123,7 +123,7 @@ export async function callGemini(prompt: string): Promise<string> {
     );
   }
 
-  const defaultModel = "gemini-3.7-flash";
+  const defaultModel = "gemini-3.5-flash";
   const model = process.env.GEMINI_MODEL || defaultModel;
   const requestBody = {
     contents: [{ parts: [{ text: prompt }] }],
