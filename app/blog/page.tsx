@@ -8,6 +8,22 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    href: "/blog/how-to-write-a-professional-resume-2026",
+    title: "How to Write a Professional Resume in 2026",
+    excerpt:
+      "Build a clear, ATS-friendly resume with stronger action verbs, measurable achievements, and fewer common mistakes.",
+    icon: "📄",
+    color: "bg-gradient-to-br from-sky-100 via-blue-50 to-white",
+  },
+  {
+    href: "/blog/10-common-grammar-mistakes-and-how-to-avoid-them",
+    title: "10 Common Grammar Mistakes and How to Avoid Them",
+    excerpt:
+      "Learn quick ways to fix frequent grammar mix-ups, from your and you’re to comma splices and subject-verb agreement.",
+    icon: "Aa",
+    color: "bg-gradient-to-br from-rose-100 via-pink-50 to-white",
+  },
+  {
     href: "/blog/how-to-write-better-ai-prompts",
     title: "How to Write Better Prompts for AI Writing Tools",
     excerpt:
