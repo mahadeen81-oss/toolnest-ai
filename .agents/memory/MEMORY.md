@@ -1,1 +1,2 @@
 - [Gemini generation compatibility](gemini-generation-compatibility.md) — keep generation settings conservative when a provider model rejects optional thinking controls.
+- [GitHub CLI-backed Git pushes](github-git-auth.md) — a valid GitHub CLI session may still need `gh auth setup-git` before HTTPS pushes work.
