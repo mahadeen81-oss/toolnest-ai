@@ -19,7 +19,8 @@ type ToolId =
   | "title-generator"
   | "resume-bullet-generator"
   | "grammar-checker"
-  | "email-reply-generator";
+  | "email-reply-generator"
+  | "product-description-generator";
 
 export interface GenerateInputs {
   [key: string]: string;
@@ -106,6 +107,19 @@ Key points to include:
 ${inputs.key_points}
 """`;
 
+    case "product-description-generator":
+      return `You are an experienced e-commerce copywriter. Write a compelling, ready-to-use product description suitable for an Amazon, Noon, Shopify, or similar product listing.
+Product name:
+"""
+${inputs.product_name}
+"""
+Key features and details:
+"""
+${inputs.features}
+"""
+Tone: ${inputs.tone || "Professional"}.
+Write about 100-160 words. Lead with the customer benefit, translate verified features into practical benefits, use sensory language only when supported by the details, and address relevant customer needs. Keep the copy easy to scan with short paragraphs and 3-5 concise benefit bullets. Finish with a clear, natural call to action. Do not invent specifications, performance claims, certifications, warranties, reviews, discounts, or compatibility. Return only the product description, without commentary or markdown headings.`;
+
     default:
       throw new Error(`Unknown toolId: ${toolId}`);
   }
@@ -187,6 +201,7 @@ export const VALID_TOOL_IDS: ToolId[] = [
   "resume-bullet-generator",
   "grammar-checker",
   "email-reply-generator",
+  "product-description-generator",
 ];
 
 export function isValidToolId(id: string): id is ToolId {

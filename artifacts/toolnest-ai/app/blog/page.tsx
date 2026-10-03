@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    href: "/blog/product-descriptions-that-actually-sell",
+    title: "How to Write Product Descriptions That Actually Sell",
+    excerpt:
+      "Turn product details into clear customer benefits with sensory language, scannable copy, and a useful call to action.",
+    icon: "🛍️",
+    color: "bg-gradient-to-br from-emerald-100 via-teal-50 to-white",
+  },
+  {
     href: "/blog/how-to-write-a-professional-resume-2026",
     title: "How to Write a Professional Resume in 2026",
     excerpt:

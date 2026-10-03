@@ -2,6 +2,14 @@ import { ToolMeta } from "@/types/tool";
 
 export const TOOLS: ToolMeta[] = [
   {
+    id: "product-description-generator",
+    slug: "product-description-generator",
+    name: "Product Description Generator",
+    description: "Create benefit-led product copy for e-commerce listings.",
+    category: "Marketing",
+    icon: "🛍️",
+  },
+  {
     id: "ai-writer",
     slug: "ai-writer",
     name: "AI Writer",
