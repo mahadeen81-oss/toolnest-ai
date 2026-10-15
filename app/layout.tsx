@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "ToolNest AI provides practical, easy-to-use AI tools for writing, content creation and productivity — no learning curve required.",
   verification: {
-    google: "5Oc2tDCABx24CsSNRFU0hDpSZVIf-X8cXXO7Y5cAAD0",
+    google: ["50c2tDCABx24CsSNRFUOhDpSZVIf-X8cXXO7Y5cAAD0", "Y50uWs365unHs_qzrDlT7pDAaOrASiElogsE6kdd7EM"],
   },
   openGraph: {
     title: "ToolNest AI — Simple AI Tools for Everyday Work",
