@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://toolnest-ai-three.vercel.app";
+const SITE_URL = "https://usetoolnest.net";
 
 export default function robots(): MetadataRoute.Robots {
   return {
