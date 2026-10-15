@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://toolnest-ai-three.vercel.app";
+const SITE_URL = "https://usetoolnest.net";
 const PAGE_FILES = new Set(["page.ts", "page.tsx", "page.js", "page.jsx"]);
 
 function findPageRoutes(directory: string, routePrefix: string): string[] {
