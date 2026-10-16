@@ -15,14 +15,11 @@ export default function ContactPage() {
       <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
         <p className="text-sm text-slate-500">Email</p>
         <a
-          href="mailto:hello@toolnest.ai"
+          href="mailto:Mahadeen81@gmail.com"
           className="text-base font-semibold text-brand-600 hover:underline"
         >
-          hello@toolnest.ai
+          Mahadeen81@gmail.com
         </a>
-        <p className="mt-4 text-xs text-slate-400">
-          Replace this with your real contact address before launch.
-        </p>
       </div>
     </div>
   );
