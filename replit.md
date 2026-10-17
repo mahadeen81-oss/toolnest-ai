@@ -44,3 +44,11 @@ No additional preferences recorded.
 ## Pointers
 
 - See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+
+## Rules for future work
+
+- GitHub (mahadeen81-oss/toolnest-ai, branch main) is the source of truth. Always pull the latest main before starting any task.
+- The live site is https://usetoolnest.net. Never change SITE_URL in app/sitemap.ts or app/robots.ts.
+- Never change the Google verification codes in app/layout.tsx, the contact email in app/contact/page.tsx, or the retry logic in app/api/generate/route.ts, unless I explicitly ask.
+- Never edit or refactor existing tools or pages unless I explicitly ask. Only add new things.
+- Never push directly to main. Work on a new branch and tell me the branch name so I can test the Vercel preview first.
