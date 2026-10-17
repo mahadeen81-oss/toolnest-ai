@@ -79,6 +79,30 @@ const articles = [
     icon: "🔢",
     color: "bg-gradient-to-br from-amber-100 via-yellow-50 to-white",
   },
+  {
+    href: "/blog/how-to-merge-pdf-files-on-your-phone-without-uploading-them",
+    title: "How to Merge PDF Files on Your Phone Without Uploading Them",
+    excerpt:
+      "Combine documents locally, arrange their order, and check the finished PDF before you share it.",
+    icon: "📑",
+    color: "bg-gradient-to-br from-violet-100 via-indigo-50 to-white",
+  },
+  {
+    href: "/blog/how-to-compress-images-without-losing-quality-free-guide",
+    title: "How to Compress Images Without Losing Quality (Free Guide)",
+    excerpt:
+      "Choose a sensible compression level, compare file sizes, and keep visible detail without misleading quality promises.",
+    icon: "📷",
+    color: "bg-gradient-to-br from-emerald-100 via-teal-50 to-white",
+  },
+  {
+    href: "/blog/title-case-vs-sentence-case-when-to-use-each-text-format",
+    title: "Title Case vs Sentence Case: When to Use Each Text Format",
+    excerpt:
+      "Pick a consistent capitalization style for headings and learn where code-friendly text formats fit.",
+    icon: "🔤",
+    color: "bg-gradient-to-br from-rose-100 via-pink-50 to-white",
+  },
 ];
 
 export default function BlogPage() {
