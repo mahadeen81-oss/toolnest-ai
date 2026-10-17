@@ -20,7 +20,8 @@ type ToolId =
   | "resume-bullet-generator"
   | "grammar-checker"
   | "email-reply-generator"
-  | "product-description-generator";
+  | "product-description-generator"
+  | "cover-letter-generator";
 
 export interface GenerateInputs {
   [key: string]: string;
@@ -120,6 +121,23 @@ ${inputs.features}
 Tone: ${inputs.tone || "Professional"}.
 Write about 100-160 words. Lead with the customer benefit, translate verified features into practical benefits, use sensory language only when supported by the details, and address relevant customer needs. Keep the copy easy to scan with short paragraphs and 3-5 concise benefit bullets. Finish with a clear, natural call to action. Do not invent specifications, performance claims, certifications, warranties, reviews, discounts, or compatibility. Return only the product description, without commentary or markdown headings.`;
 
+    case "cover-letter-generator":
+      return `You are a professional cover-letter writer. Write a ready-to-send cover letter for the role below.
+Job title:
+"""
+${inputs.job_title}
+"""
+Company:
+"""
+${inputs.company?.trim() || "Not provided"}
+"""
+Candidate background, key experience, and skills:
+"""
+${inputs.background}
+"""
+Tone: ${inputs.tone || "Professional"}.
+Write approximately 250-350 words. Use only facts the candidate provided; never invent achievements, credentials, numbers, employers, or experience. Do not use placeholders such as [Your Name], [Company Name], or [Hiring Manager]. If the company name is not provided, use a neutral greeting such as "Dear Hiring Manager" and avoid naming the company. Write in plain text with no markdown, headings, or commentary. Return only the letter, ready for the user to review and send.`;
+
     default:
       throw new Error(`Unknown toolId: ${toolId}`);
   }
@@ -202,6 +220,7 @@ export const VALID_TOOL_IDS: ToolId[] = [
   "grammar-checker",
   "email-reply-generator",
   "product-description-generator",
+  "cover-letter-generator",
 ];
 
 export function isValidToolId(id: string): id is ToolId {
