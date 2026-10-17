@@ -55,6 +55,30 @@ const articles = [
     icon: "✓",
     color: "bg-gradient-to-br from-teal-100 via-emerald-50 to-white",
   },
+  {
+    href: "/blog/how-to-write-a-cover-letter-that-gets-interviews",
+    title: "How to Write a Cover Letter That Gets Interviews",
+    excerpt:
+      "Build a focused letter that connects your strongest evidence to the role, sounds like you, and gives employers a clear reason to talk.",
+    icon: "📝",
+    color: "bg-gradient-to-br from-indigo-100 via-violet-50 to-white",
+  },
+  {
+    href: "/blog/how-to-convert-images-to-pdf-on-your-phone-free-no-upload",
+    title: "How to Convert Images to PDF on Your Phone (Free, No Upload)",
+    excerpt:
+      "Choose, arrange, and export phone photos as one PDF while keeping the files on your device.",
+    icon: "📄",
+    color: "bg-gradient-to-br from-sky-100 via-cyan-50 to-white",
+  },
+  {
+    href: "/blog/word-count-guide-essay-blog-post-resume",
+    title: "Word Count Guide: How Long Should Your Essay, Blog Post, or Resume Be?",
+    excerpt:
+      "Use realistic word-count ranges for common writing tasks, then edit for purpose instead of padding to hit a number.",
+    icon: "🔢",
+    color: "bg-gradient-to-br from-amber-100 via-yellow-50 to-white",
+  },
 ];
 
 export default function BlogPage() {

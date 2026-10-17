@@ -89,6 +89,30 @@ export const TOOLS: ToolMeta[] = [
     category: "Productivity",
     icon: "✉️",
   },
+  {
+    id: "cover-letter-generator",
+    slug: "cover-letter-generator",
+    name: "Cover Letter Generator",
+    description: "Create a tailored, ready-to-send cover letter from your experience and target role.",
+    category: "Writing",
+    icon: "📝",
+  },
+  {
+    id: "word-counter",
+    slug: "word-counter",
+    name: "Word Counter",
+    description: "Count words, characters, sentences, paragraphs, and estimated reading time.",
+    category: "Productivity",
+    icon: "🔢",
+  },
+  {
+    id: "image-to-pdf",
+    slug: "image-to-pdf",
+    name: "Image to PDF",
+    description: "Combine JPG and PNG images into a PDF directly in your browser.",
+    category: "Productivity",
+    icon: "🖼️",
+  },
 ];
 
 export function getToolBySlug(slug: string): ToolMeta | undefined {
