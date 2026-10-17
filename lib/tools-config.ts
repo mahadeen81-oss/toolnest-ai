@@ -113,6 +113,30 @@ export const TOOLS: ToolMeta[] = [
     category: "Productivity",
     icon: "🖼️",
   },
+  {
+    id: "merge-pdf",
+    slug: "merge-pdf",
+    name: "Merge PDF",
+    description: "Arrange and combine PDF files into one document without uploading them.",
+    category: "Productivity",
+    icon: "📑",
+  },
+  {
+    id: "compress-image",
+    slug: "compress-image",
+    name: "Compress Image",
+    description: "Reduce image file sizes locally and compare the savings before downloading.",
+    category: "Productivity",
+    icon: "📷",
+  },
+  {
+    id: "case-converter",
+    slug: "case-converter",
+    name: "Case Converter",
+    description: "Switch text between title, sentence, upper, lower, camel, snake, and kebab case.",
+    category: "Writing",
+    icon: "🔤",
+  },
 ];
 
 export function getToolBySlug(slug: string): ToolMeta | undefined {
