@@ -171,6 +171,7 @@ export default function HomePage() {
         <AdPlaceholder variant="premium" />
       </div>
 
+      {!query.trim() && category === "All" && (
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-slate-900">New tools</h2>
@@ -186,6 +187,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      )}
     </div>
   );
 }
