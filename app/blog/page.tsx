@@ -103,6 +103,30 @@ const articles = [
     icon: "🔤",
     color: "bg-gradient-to-br from-rose-100 via-pink-50 to-white",
   },
+  {
+    href: "/blog/how-to-split-a-pdf-and-extract-pages-on-your-phone",
+    title: "How to Split a PDF and Extract Pages on Your Phone",
+    excerpt:
+      "Select the right PDF pages, choose combined or individual downloads, and check your files without uploading them.",
+    icon: "✂️",
+    color: "bg-gradient-to-br from-violet-100 via-indigo-50 to-white",
+  },
+  {
+    href: "/blog/how-to-remove-duplicate-lines-from-a-list-excel-free-guide",
+    title: "How to Remove Duplicate Lines From a List (Excel-Free Guide)",
+    excerpt:
+      "Choose sensible matching rules for case, spaces, and blank lines, then review a clean list without opening Excel.",
+    icon: "≡",
+    color: "bg-gradient-to-br from-rose-100 via-pink-50 to-white",
+  },
+  {
+    href: "/blog/how-to-create-a-strong-password-you-can-actually-remember",
+    title: "How to Create a Strong Password You Can Actually Remember",
+    excerpt:
+      "Learn when to use a memorable passphrase, when to generate random characters, and how to store and recover secrets safely.",
+    icon: "🔐",
+    color: "bg-gradient-to-br from-emerald-100 via-teal-50 to-white",
+  },
 ];
 
 export default function BlogPage() {

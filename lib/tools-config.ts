@@ -137,6 +137,30 @@ export const TOOLS: ToolMeta[] = [
     category: "Writing",
     icon: "🔤",
   },
+  {
+    id: "split-pdf",
+    slug: "split-pdf",
+    name: "Split PDF",
+    description: "Extract selected PDF pages into one document or separate files in your browser.",
+    category: "Productivity",
+    icon: "✂️",
+  },
+  {
+    id: "remove-duplicate-lines",
+    slug: "remove-duplicate-lines",
+    name: "Remove Duplicate Lines",
+    description: "Clean repeated lines from pasted text locally with flexible matching options.",
+    category: "Writing",
+    icon: "≡",
+  },
+  {
+    id: "password-generator",
+    slug: "password-generator",
+    name: "Password Generator",
+    description: "Generate a secure random password on your device with customizable character groups.",
+    category: "Productivity",
+    icon: "🔐",
+  },
 ];
 
 export function getToolBySlug(slug: string): ToolMeta | undefined {
