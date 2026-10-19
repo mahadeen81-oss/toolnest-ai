@@ -181,12 +181,12 @@ export default function HomePageContent({ latestArticles }: { latestArticles: Re
               },
               {
                 title: "Built for mobile",
-                desc: "Every tool works cleanly on a phone, not just as an afterthought.",
+                desc: "Designed to be simple and easy to use on a phone.",
                 icon: "📱",
               },
               {
                 title: "Always expanding",
-                desc: "New AI tools are added regularly based on what people actually need.",
+                desc: "New tools are added from time to time.",
                 icon: "🧩",
               },
             ].map((item) => (
