@@ -5,7 +5,6 @@ import Link from "next/link";
 import { TOOLS } from "@/lib/tools-config";
 import ToolCard from "@/components/ToolCard";
 import SearchBar from "@/components/SearchBar";
-import AdPlaceholder from "@/components/AdPlaceholder";
 
 const CATEGORIES = ["All", ...Array.from(new Set(TOOLS.map((t) => t.category)))];
 const FEATURED_IDS = ["image-to-pdf", "cover-letter-generator", "merge-pdf", "word-counter", "grammar-checker", "ai-writer"];
@@ -123,10 +122,6 @@ export default function HomePageContent({ latestArticles }: { latestArticles: Re
           </div>
         </div>
       </section>
-
-      <div className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
-        <AdPlaceholder variant="banner" />
-      </div>
 
       {/* Search results / featured tools */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">

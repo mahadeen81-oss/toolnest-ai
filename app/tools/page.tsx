@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import { TOOLS } from "@/lib/tools-config";
 import ToolCard from "@/components/ToolCard";
 import SearchBar from "@/components/SearchBar";
-import AdPlaceholder from "@/components/AdPlaceholder";
 
 const CATEGORIES = ["All", ...Array.from(new Set(TOOLS.map((t) => t.category)))];
 
@@ -52,21 +51,16 @@ export default function ToolsPage() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-4">
-        <div className="lg:col-span-3">
-          {filtered.length === 0 ? (
-            <p className="text-sm text-slate-500">No tools match your filters.</p>
-          ) : (
-            <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {filtered.map((tool) => (
-                <ToolCard key={tool.id} tool={tool} />
-              ))}
-            </div>
-          )}
-        </div>
-        <aside className="lg:sticky lg:top-24 lg:col-span-1 lg:self-start">
-          <AdPlaceholder variant="sidebar" />
-        </aside>
+      <div className="mt-10">
+        {filtered.length === 0 ? (
+          <p className="text-sm text-slate-500">No tools match your filters.</p>
+        ) : (
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
