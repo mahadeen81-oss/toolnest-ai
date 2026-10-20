@@ -8,6 +8,8 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://usetoolnest.net"),
+  alternates: { canonical: "./" },
   title: {
     default: "ToolNest AI — Simple AI Tools for Everyday Work",
     template: "%s | ToolNest AI",
