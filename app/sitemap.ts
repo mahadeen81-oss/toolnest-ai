@@ -36,6 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/privacy-policy",
     "/terms-of-service",
+    "/faq",
+    "/disclaimer",
   ]);
 
   return Array.from(routes).map((route) => ({
