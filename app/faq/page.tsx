@@ -32,7 +32,7 @@ const faqs: FaqItem[] = [
   {
     question: "How do the browser-only tools handle my files and text?",
     answer: [
-      "The browser-only PDF, image, and text utilities process selected files and entered text on your device. Those files and text do not leave your device through these tools: they are not uploaded to a processing server or sent to an AI service. The website itself still loads over the internet. Downloaded results remain on your device until you remove them.",
+      "The browser-only PDF, image, and text utilities process selected files and entered text on your device. Those files and text do not leave your device through these tools: they are not uploaded to a processing server or sent to an AI service. The website itself still loads over the internet. Files you download are saved by your own browser or device, so you control them. We do not store them, and your browser or device may delete them automatically.",
     ],
   },
   {
