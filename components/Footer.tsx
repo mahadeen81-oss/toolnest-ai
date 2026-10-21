@@ -31,6 +31,8 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-slate-500">
             <li><Link href="/privacy-policy" className="hover:text-brand-600">Privacy Policy</Link></li>
             <li><Link href="/terms-of-service" className="hover:text-brand-600">Terms of Service</Link></li>
+            <li><Link href="/faq" className="hover:text-brand-600">FAQ</Link></li>
+            <li><Link href="/disclaimer" className="hover:text-brand-600">Disclaimer</Link></li>
           </ul>
         </div>
       </div>
