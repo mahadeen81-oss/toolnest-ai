@@ -127,6 +127,46 @@ const articles = [
     icon: "🔐",
     color: "bg-gradient-to-br from-emerald-100 via-teal-50 to-white",
   },
+  {
+    href: "/blog/how-to-write-a-professional-email-reply-with-examples",
+    title: "How to Write a Professional Email Reply (With Examples)",
+    excerpt:
+      "Answer requests, explain delays, and follow up politely with practical email examples and a clear next step.",
+    icon: "✉️",
+    color: "bg-gradient-to-br from-sky-100 via-blue-50 to-white",
+  },
+  {
+    href: "/blog/how-to-summarize-long-text-without-losing-the-key-points",
+    title: "How to Summarize Long Text Without Losing the Key Points",
+    excerpt:
+      "Keep the central message, evidence, and important qualifications when turning a long document into a useful summary.",
+    icon: "🗒️",
+    color: "bg-gradient-to-br from-teal-100 via-emerald-50 to-white",
+  },
+  {
+    href: "/blog/how-to-write-youtube-scripts-that-keep-viewers-watching",
+    title: "How to Write YouTube Scripts That Keep Viewers Watching",
+    excerpt:
+      "Build a focused video around a clear promise, natural narration, useful visuals, and a payoff you can deliver.",
+    icon: "🎬",
+    color: "bg-gradient-to-br from-red-100 via-rose-50 to-white",
+  },
+  {
+    href: "/blog/how-to-write-social-media-posts-for-different-platforms",
+    title: "How to Write Social Media Posts for Different Platforms",
+    excerpt:
+      "Adapt one accurate message for LinkedIn, Instagram, X, and Facebook without copying the same caption everywhere.",
+    icon: "📣",
+    color: "bg-gradient-to-br from-violet-100 via-fuchsia-50 to-white",
+  },
+  {
+    href: "/blog/how-to-write-better-titles-and-headlines",
+    title: "How to Write Better Titles and Headlines",
+    excerpt:
+      "Turn a vague topic into a specific, honest headline with practical examples and a repeatable editing routine.",
+    icon: "🏷️",
+    color: "bg-gradient-to-br from-amber-100 via-orange-50 to-white",
+  },
 ];
 
 export default function BlogPage() {
