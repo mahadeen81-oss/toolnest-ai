@@ -325,7 +325,7 @@ export default function ToolIllustration({
 }) {
   return (
     <div
-      className={`flex shrink-0 items-center justify-center rounded-2xl ${TONES[name === "merge-pdf" ? "PDF" : category] || TONES.Productivity} ${className}`}
+      className={`tool-illustration flex shrink-0 items-center justify-center rounded-2xl ${TONES[name === "merge-pdf" ? "PDF" : category] || TONES.Productivity} ${className}`}
       style={{ width: size, height: size }}
       aria-hidden="true"
     >

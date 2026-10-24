@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Header() {
   return (
@@ -19,12 +20,15 @@ export default function Header() {
           <Link href="/contact" className="hover:text-brand-600">Contact</Link>
         </nav>
 
-        <Link
-          href="/tools"
-          className="rounded-lg bg-gradient-to-r from-brand-500 to-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:from-brand-600 hover:to-indigo-700 hover:shadow-md active:translate-y-0"
-        >
-          Explore Tools
-        </Link>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <ThemeToggle />
+          <Link
+            href="/tools"
+            className="rounded-lg bg-gradient-to-r from-brand-500 to-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:from-brand-600 hover:to-indigo-700 hover:shadow-md active:translate-y-0 sm:px-4"
+          >
+            Explore Tools
+          </Link>
+        </div>
       </div>
     </header>
   );
