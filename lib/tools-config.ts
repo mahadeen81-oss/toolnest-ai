@@ -104,6 +104,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Count words, characters, sentences, paragraphs, and estimated reading time.",
     category: "Productivity",
     icon: "🔢",
+    illustration: "word-counter",
   },
   {
     id: "image-to-pdf",
@@ -120,6 +121,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Arrange and combine PDF files into one document without uploading them.",
     category: "Productivity",
     icon: "📑",
+    illustration: "merge-pdf",
   },
   {
     id: "compress-image",
@@ -168,6 +170,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Create a QR code from text or a URL and download a PNG, entirely in your browser.",
     category: "Productivity",
     icon: "▦",
+    illustration: "qr-code-generator",
   },
   {
     id: "unit-converter",
