@@ -170,6 +170,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Clean repeated lines from pasted text locally with flexible matching options.",
     category: "Writing",
     icon: "≡",
+    illustration: "remove-duplicate-lines",
   },
   {
     id: "password-generator",
@@ -178,6 +179,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Generate a secure random password on your device with customizable character groups.",
     category: "Productivity",
     icon: "🔐",
+    illustration: "password-generator",
   },
   {
     id: "qr-code-generator",
@@ -195,6 +197,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Convert length, weight, temperature, volume, and speed with instant local calculations.",
     category: "Productivity",
     icon: "⇄",
+    illustration: "unit-converter",
   },
   {
     id: "percentage-calculator",
@@ -203,6 +206,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Find percentages, increase or decrease values, and calculate percentage changes.",
     category: "Productivity",
     icon: "%",
+    illustration: "percentage-calculator",
   },
   {
     id: "age-calculator",
@@ -211,6 +215,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Calculate calendar age in years, months, and days, plus days until your next birthday.",
     category: "Productivity",
     icon: "◷",
+    illustration: "age-calculator",
   },
   {
     id: "bmi-calculator",
@@ -219,6 +224,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Calculate adult BMI using metric or imperial measurements, with clear screening limitations.",
     category: "Productivity",
     icon: "↕",
+    illustration: "bmi-calculator",
   },
   {
     id: "tip-split-calculator",
@@ -227,6 +233,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Work out a tip, total bill, and fair per-person shares with cent-aware rounding.",
     category: "Productivity",
     icon: "÷",
+    illustration: "tip-split-calculator",
   },
 ];
 
