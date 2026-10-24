@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import WordCounter from "@/components/tools/WordCounter";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
   title: "Word Counter",
@@ -8,9 +10,13 @@ export const metadata: Metadata = {
 };
 
 export default function WordCounterPage() {
+  const illustration = getToolBySlug("word-counter")?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Word Counter</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Word Counter</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">
         Get live word and character counts, sentence and paragraph totals, and a
         quick estimate of how long your text takes to read.

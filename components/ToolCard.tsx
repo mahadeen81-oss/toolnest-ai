@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ToolMeta } from "@/types/tool";
+import ToolIllustration from "@/components/ToolIllustration";
 
 const CATEGORY_STYLES: Record<string, { icon: string; badge: string }> = {
   Writing: {
@@ -28,10 +29,14 @@ export default function ToolCard({ tool }: { tool: ToolMeta }) {
       href={`/tools/${tool.slug}`}
       className="group flex flex-col rounded-3xl border border-violet-100 bg-white/95 p-6 shadow-sm transition duration-200 hover:-translate-y-1.5 hover:border-violet-200 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
     >
-      <div className="flex items-center gap-3">
-        <span className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${style.icon} text-2xl text-white shadow-md transition duration-200 group-hover:scale-105 group-hover:shadow-lg`}>
-          {tool.icon}
-        </span>
+      <div className={tool.illustration ? "flex flex-wrap items-center gap-3" : "flex items-center gap-3"}>
+        {tool.illustration ? (
+          <ToolIllustration name={tool.illustration} category={tool.category} size={64} />
+        ) : (
+          <span className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${style.icon} text-2xl text-white shadow-md transition duration-200 group-hover:scale-105 group-hover:shadow-lg`}>
+            {tool.icon}
+          </span>
+        )}
         <span className={`rounded-full bg-gradient-to-r ${style.badge} px-3 py-1 text-xs font-semibold text-white shadow-sm`}>
           {tool.category}
         </span>

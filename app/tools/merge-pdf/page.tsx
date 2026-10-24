@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import MergePdf from "@/components/tools/MergePdf";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
   title: "Merge PDF",
@@ -7,9 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default function MergePdfPage() {
+  const illustration = getToolBySlug("merge-pdf")?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Merge PDF</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Merge PDF</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">Arrange two or more PDF files in the order you need, then save one combined document.</p>
       <p className="mt-6 rounded-3xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm leading-6 text-emerald-900">Your files and their text never leave your device. All processing happens in this browser, with no uploads or API calls.</p>
       <div className="mt-8"><MergePdf /></div>

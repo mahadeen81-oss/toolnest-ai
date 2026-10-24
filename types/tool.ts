@@ -16,4 +16,7 @@ export interface ToolMeta {
   description: string;
   category: string;
   icon: string; // simple text/emoji glyph, keeps the bundle light
+  illustration?: ToolIllustrationName;
 }
+
+export type ToolIllustrationName = "merge-pdf" | "qr-code-generator" | "word-counter";
