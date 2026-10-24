@@ -134,6 +134,93 @@ function Art({ name }: { name: ToolIllustrationName }) {
       </>
     );
   }
+  if (name === "resume-bullet-generator") {
+    return (
+      <>
+        <rect x="10" y="7" width="38" height="50" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <circle cx="19" cy="19" r="2.5" fill="#7c3aed" /><circle cx="19" cy="30" r="2.5" fill="#7c3aed" /><circle cx="19" cy="41" r="2.5" fill="#7c3aed" />
+        <path d="M26 19h15M26 30h15M26 41h9" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <circle cx="48" cy="46" r="10" fill="#7c3aed" stroke="#fff" strokeWidth="2" />
+        <path d="M43 46l4 4 6-8" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "grammar-checker") {
+    return (
+      <>
+        <rect x="9" y="9" width="40" height="46" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M16 21h26M16 31h14M16 41h20" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M32 34q3 3 6 0t6 0" fill="none" stroke="#4c1d95" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="47" cy="45" r="11" fill="#7c3aed" stroke="#fff" strokeWidth="2" />
+        <path d="M41 45l4 4 7-9" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "email-reply-generator") {
+    return (
+      <>
+        <rect x="8" y="12" width="40" height="30" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M10 15l18 14 18-14" fill="none" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="44" cy="44" r="13" fill="#7c3aed" stroke="#fff" strokeWidth="2" />
+        <path d="M51 49c0-6-4-8-10-8h-3m5-5l-5 5 5 5" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "cover-letter-generator") {
+    return (
+      <>
+        <rect x="11" y="6" width="38" height="52" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M18 16h12" stroke="#4c1d95" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M18 26h24M18 33h24M18 40h14" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M18 50c4-6 6 2 9-3s4 2 8-1" fill="none" stroke="#4c1d95" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M44 38l12 12-3 3-12-12z" fill="#7c3aed" stroke="#4c1d95" strokeWidth="2" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "image-to-pdf") {
+    return (
+      <>
+        <rect x="6" y="16" width="24" height="24" rx="4" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <circle cx="14" cy="24" r="3" fill="#7c3aed" />
+        <path d="M8 38l8-8 5 5 4-4 5 7" fill="#ddd6fe" stroke="#7c3aed" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M32 28h6m-3-3l3 3-3 3" fill="none" stroke="#4c1d95" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="41" y="10" width="17" height="30" rx="3" fill="#7c3aed" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M45 20h9M45 26h9" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+        <path d="M8 52h48" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" opacity=".5" />
+      </>
+    );
+  }
+  if (name === "compress-image") {
+    return (
+      <>
+        <rect x="18" y="18" width="28" height="28" rx="4" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <circle cx="26" cy="27" r="3" fill="#7c3aed" />
+        <path d="M20 44l9-9 5 5 4-4 6 8" fill="#ddd6fe" stroke="#7c3aed" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M32 4v8m-4-4l4 4 4-4M32 60v-8m-4 4l4-4 4 4M4 32h8m-4-4l4 4-4 4M60 32h-8m4-4l-4 4 4 4" fill="none" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "case-converter") {
+    return (
+      <>
+        <path d="M7 40l9-24 9 24M10 33h12" fill="none" stroke="#4c1d95" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M44 31c0-3-2-6-6-6s-6 3-6 6 2 6 6 6 6-3 6-6zM44 25v15" fill="none" stroke="#7c3aed" strokeWidth="3.5" strokeLinecap="round" />
+        <path d="M18 50h28m-4-4l4 4-4 4M48 50H20m4-4l-4 4 4 4" fill="none" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "split-pdf") {
+    return (
+      <>
+        <rect x="6" y="8" width="22" height="44" rx="4" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <rect x="36" y="8" width="22" height="44" rx="4" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M12 20h10M12 28h10M42 20h10M42 28h10" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M32 4v56" stroke="#4c1d95" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="4 4" />
+        <circle cx="32" cy="48" r="9" fill="#7c3aed" stroke="#fff" strokeWidth="2" />
+        <path d="M27 48h10m-3-3l3 3-3 3m-4-6l-3 3 3 3" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
   return (
     <>
       <rect x="8" y="10" width="38" height="44" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />

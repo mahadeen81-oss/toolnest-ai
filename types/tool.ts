@@ -27,4 +27,12 @@ export type ToolIllustrationName = "merge-pdf" | "qr-code-generator" | "word-cou
   | "social-media-post-generator"
   | "youtube-script-generator"
   | "idea-generator"
-  | "title-generator";
+  | "title-generator"
+  | "resume-bullet-generator"
+  | "grammar-checker"
+  | "email-reply-generator"
+  | "cover-letter-generator"
+  | "image-to-pdf"
+  | "compress-image"
+  | "case-converter"
+  | "split-pdf";
