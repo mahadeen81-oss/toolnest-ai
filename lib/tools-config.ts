@@ -80,6 +80,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Turn your job duties into strong, achievement-focused resume bullet points.",
     category: "Productivity",
     icon: "📄",
+    illustration: "resume-bullet-generator",
   },
   {
     id: "grammar-checker",
@@ -88,6 +89,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Check your text for grammar, spelling and punctuation issues, with corrections explained.",
     category: "Writing",
     icon: "✓",
+    illustration: "grammar-checker",
   },
   {
     id: "email-reply-generator",
@@ -96,6 +98,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Draft a professional email reply based on the message you received and what you want to say.",
     category: "Productivity",
     icon: "✉️",
+    illustration: "email-reply-generator",
   },
   {
     id: "cover-letter-generator",
@@ -104,6 +107,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Create a tailored, ready-to-send cover letter from your experience and target role.",
     category: "Writing",
     icon: "📝",
+    illustration: "cover-letter-generator",
   },
   {
     id: "word-counter",
@@ -121,6 +125,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Combine JPG and PNG images into a PDF directly in your browser.",
     category: "Productivity",
     icon: "🖼️",
+    illustration: "image-to-pdf",
   },
   {
     id: "merge-pdf",
@@ -138,6 +143,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Reduce image file sizes locally and compare the savings before downloading.",
     category: "Productivity",
     icon: "📷",
+    illustration: "compress-image",
   },
   {
     id: "case-converter",
@@ -146,6 +152,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Switch text between title, sentence, upper, lower, camel, snake, and kebab case.",
     category: "Writing",
     icon: "🔤",
+    illustration: "case-converter",
   },
   {
     id: "split-pdf",
@@ -154,6 +161,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Extract selected PDF pages into one document or separate files in your browser.",
     category: "Productivity",
     icon: "✂️",
+    illustration: "split-pdf",
   },
   {
     id: "remove-duplicate-lines",

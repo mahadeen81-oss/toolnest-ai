@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 import ToolRunner from "@/components/tools/ToolRunner";
 
 export const metadata: Metadata = {
@@ -7,9 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function EmailReplyGeneratorPage() {
+  const tool = getToolBySlug("email-reply-generator");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Email Reply Generator</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Email Reply Generator</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">
         Share the email and your key points to draft a clear reply in the tone you want.
       </p>

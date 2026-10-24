@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 import SplitPdf from "@/components/tools/SplitPdf";
 
 export const metadata: Metadata = {
@@ -7,9 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function SplitPdfPage() {
+  const tool = getToolBySlug("split-pdf");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Split PDF</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Split PDF</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">Pick the pages you need, then save them as one document or individual PDFs.</p>
       <p className="mt-6 rounded-3xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm leading-6 text-emerald-900">Your files and text never leave your device. Processing stays in this browser, with no uploads or API calls.</p>
       <div className="mt-8"><SplitPdf /></div>

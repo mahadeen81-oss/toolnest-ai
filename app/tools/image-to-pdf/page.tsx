@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 import ImageToPdf from "@/components/tools/ImageToPdf";
 
 export const metadata: Metadata = {
@@ -8,9 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function ImageToPdfPage() {
+  const tool = getToolBySlug("image-to-pdf");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Image to PDF</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Image to PDF</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">
         Turn a set of JPG or PNG images into one ordered PDF. Choose A4 pages or
         pages fitted to each image, then download the file.

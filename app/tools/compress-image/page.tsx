@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 import CompressImage from "@/components/tools/CompressImage";
 
 export const metadata: Metadata = {
@@ -7,9 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function CompressImagePage() {
+  const tool = getToolBySlug("compress-image");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Compress Image</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Compress Image</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">Compare smaller JPEG versions of your JPG or PNG images, with an adjustable quality level and individual downloads.</p>
       <p className="mt-6 rounded-3xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm leading-6 text-emerald-900">Your files and their content never leave your device. Images are processed locally in this browser, with no uploads or API calls.</p>
       <div className="mt-8"><CompressImage /></div>
