@@ -10,9 +10,186 @@ body {
   color: #0f172a;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #475569;
+  opacity: 1;
+}
+
 :focus-visible {
   outline: 2px solid #7c3aed;
   outline-offset: 2px;
+}
+
+html.dark {
+  color-scheme: dark;
+  background: #111827;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+}
+
+html.dark body {
+  background-color: #111827;
+  color: #e5eaf3;
+}
+
+html.dark :focus-visible {
+  outline-color: #a78bfa;
+}
+
+html.dark ::selection {
+  color: #fff;
+  background: #6d4bd1;
+}
+
+/* Re-tint existing light-mode utility classes without changing page markup. */
+html.dark [class~="bg-white"],
+html.dark [class~="bg-white/95"],
+html.dark [class~="bg-white/90"],
+html.dark [class~="bg-white/85"],
+html.dark [class~="bg-white/80"] {
+  background-color: #182234;
+}
+
+html.dark [class~="bg-slate-50"] { background-color: #182234; }
+html.dark [class~="bg-slate-100"] { background-color: #222f43; }
+html.dark [class~="bg-slate-200"] { background-color: #344258; }
+
+html.dark [class~="bg-violet-50"],
+html.dark [class~="bg-violet-50/70"],
+html.dark [class~="bg-violet-50/80"] { background-color: #211e37; }
+html.dark [class~="bg-violet-100"] { background-color: #30284d; }
+html.dark [class~="bg-violet-200"] { background-color: #40365d; }
+
+html.dark [class~="bg-indigo-50"] { background-color: #1d2940; }
+html.dark [class~="bg-indigo-100"] { background-color: #273451; }
+html.dark [class~="bg-cyan-50"],
+html.dark [class~="bg-cyan-50/50"],
+html.dark [class~="bg-cyan-50/60"] { background-color: #18313b; }
+html.dark [class~="bg-cyan-100"] { background-color: #20404a; }
+html.dark [class~="bg-brand-50"] { background-color: #282442; }
+html.dark [class~="bg-emerald-50"] { background-color: #16352f; }
+html.dark [class~="bg-emerald-100"] { background-color: #1c473d; }
+html.dark [class~="bg-rose-50"],
+html.dark [class~="bg-rose-100"] { background-color: #3a2534; }
+html.dark [class~="bg-amber-50"],
+html.dark [class~="bg-amber-100"] { background-color: #3c3222; }
+html.dark [class~="bg-red-50"] { background-color: #3d252c; }
+html.dark [class~="bg-orange-50"] { background-color: #3b2c28; }
+html.dark [class~="bg-purple-50"] { background-color: #2b2340; }
+html.dark [class~="bg-teal-50"] { background-color: #173430; }
+
+html.dark [class~="text-slate-900"],
+html.dark [class~="text-slate-800"] { color: #eef2f8; }
+html.dark [class~="text-slate-700"] { color: #d4dceb; }
+html.dark [class~="text-slate-600"] { color: #bac6d8; }
+html.dark [class~="text-slate-500"] { color: #a3b0c4; }
+html.dark [class~="text-slate-400"] { color: #8796ac; }
+html.dark [class~="text-slate-300"] { color: #718198; }
+html.dark [class~="text-brand-600"] { color: #b9a2ff; }
+html.dark [class~="text-violet-700"],
+html.dark [class~="text-violet-800"],
+html.dark [class~="text-violet-900"] { color: #c4b5fd; }
+html.dark [class~="text-emerald-900"],
+html.dark [class~="text-emerald-800"],
+html.dark [class~="text-emerald-700"] { color: #86efc2; }
+html.dark [class~="text-rose-700"],
+html.dark [class~="text-rose-800"] { color: #fda4af; }
+html.dark [class~="text-amber-700"],
+html.dark [class~="text-amber-800"],
+html.dark [class~="text-amber-900"] { color: #fcd580; }
+html.dark [class~="text-red-600"] { color: #fca5a5; }
+
+html.dark [class~="border-violet-100/80"] { border-color: #37314f; }
+html.dark [class~="border-violet-300"] { border-color: #51456f; }
+html.dark [class~="border-slate-300"] { border-color: #64748b; }
+html.dark [class~="border-slate-400"] { border-color: #5d6b7f; }
+html.dark [class~="border-emerald-200"] { border-color: #2c6654; }
+html.dark [class~="border-rose-200"] { border-color: #714352; }
+html.dark [class~="border-amber-200"] { border-color: #705832; }
+
+/* Shared dark variants also cover cards on protected pages without editing them. */
+[class~="border-slate-200"],
+[class~="border-violet-100"],
+[class~="border-violet-200"] {
+  @apply dark:border-slate-500;
+}
+
+/* Keep the original SVG palette in light mode; pair brighter ink with dark paper. */
+html.dark .tool-illustration [fill="#fff"] { fill: #111827; }
+html.dark .tool-illustration [fill="#ddd6fe"] { fill: #3b3264; }
+html.dark .tool-illustration [fill="#fecaca"] { fill: #602c3a; }
+html.dark .tool-illustration [fill="#7c3aed"] { fill: #8b5cf6; }
+html.dark .tool-illustration [fill="#0f766e"] { fill: #5eead4; }
+html.dark .tool-illustration [stroke="#4c1d95"] { stroke: #c4b5fd; }
+html.dark .tool-illustration [stroke="#7c3aed"] { stroke: #b6a0ff; }
+html.dark .tool-illustration [opacity] { opacity: 1; }
+
+/* Light gradient stops used for large page surfaces; vivid brand/category gradients remain intact. */
+html.dark [class~="from-violet-50"],
+html.dark [class~="from-violet-50/70"],
+html.dark [class~="from-violet-50/80"] {
+  --tw-gradient-from: #131d30 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(19 29 48 / 0) var(--tw-gradient-to-position);
+}
+html.dark [class~="from-slate-50"] {
+  --tw-gradient-from: #172235 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(23 34 53 / 0) var(--tw-gradient-to-position);
+}
+html.dark [class~="via-white"] {
+  --tw-gradient-via: #182234 var(--tw-gradient-via-position);
+  --tw-gradient-to: rgb(24 34 52 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #182234 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+html.dark [class~="to-indigo-50"] { --tw-gradient-to: #1c2840 var(--tw-gradient-to-position); }
+html.dark [class~="to-slate-50"],
+html.dark [class~="to-white"] { --tw-gradient-to: #182234 var(--tw-gradient-to-position); }
+html.dark [class~="to-violet-50/60"] { --tw-gradient-to: rgb(42 34 66 / 0.7) var(--tw-gradient-to-position); }
+html.dark [class~="to-cyan-50/60"] { --tw-gradient-to: rgb(24 49 59 / 0.7) var(--tw-gradient-to-position); }
+html.dark [class~="to-cyan-50/50"] { --tw-gradient-to: rgb(24 49 59 / 0.55) var(--tw-gradient-to-position); }
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  color: #e5eaf3;
+  background-color: #141e2e;
+  border-color: #64748b;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #8796ac;
+  opacity: 1;
+}
+
+html.dark select option {
+  color: #e5eaf3;
+  background: #182234;
+}
+
+html.dark [class~="focus:ring-brand-100"]:focus {
+  --tw-ring-color: rgb(167 139 250 / 0.35);
+}
+
+html.dark [class~="focus-visible:ring-offset-2"] {
+  --tw-ring-offset-color: #182234;
+}
+
+html.dark [class~="hover:text-brand-600"]:hover { color: #c4b5fd; }
+html.dark [class~="hover:bg-violet-100"]:hover { background-color: #30284d; }
+html.dark [class~="hover:border-violet-200"]:hover { border-color: #94a3b8; }
+
+html.dark .theme-toggle {
+  border-color: #37314f;
+  background-color: #22263a;
+  color: #e2d8ff;
+}
+
+html.dark .theme-toggle:hover {
+  border-color: #594a7d;
+  background-color: #30284d;
 }
 
 @media (prefers-reduced-motion: reduce) {

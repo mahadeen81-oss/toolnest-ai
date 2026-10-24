@@ -268,7 +268,7 @@ export default function ToolRunner({
           {output ? (
             <MarkdownResult output={output} />
           ) : (
-            <span className="text-slate-400">Your generated result will appear here.</span>
+            <span className="text-slate-600">Your generated result will appear here.</span>
           )}
         </div>
       </div>

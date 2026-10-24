@@ -36,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-slate-200 py-4 text-center text-xs text-slate-400">
+      <div className="border-t border-slate-200 py-4 text-center text-xs text-slate-600">
         &copy; {new Date().getFullYear()} ToolNest AI. All rights reserved.
       </div>
     </footer>
