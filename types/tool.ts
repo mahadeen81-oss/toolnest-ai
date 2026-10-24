@@ -19,4 +19,12 @@ export interface ToolMeta {
   illustration?: ToolIllustrationName;
 }
 
-export type ToolIllustrationName = "merge-pdf" | "qr-code-generator" | "word-counter";
+export type ToolIllustrationName = "merge-pdf" | "qr-code-generator" | "word-counter"
+  | "product-description-generator"
+  | "ai-writer"
+  | "text-summarizer"
+  | "text-rewriter"
+  | "social-media-post-generator"
+  | "youtube-script-generator"
+  | "idea-generator"
+  | "title-generator";
