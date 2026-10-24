@@ -221,6 +221,87 @@ function Art({ name }: { name: ToolIllustrationName }) {
       </>
     );
   }
+  if (name === "remove-duplicate-lines") {
+    return (
+      <>
+        <rect x="9" y="8" width="38" height="48" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M16 19h24M16 29h24M16 39h24" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M16 29h24" stroke="#ddd6fe" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="3 4" />
+        <path d="M16 49h12" stroke="#4c1d95" strokeWidth="2.5" strokeLinecap="round" />
+        <circle cx="47" cy="45" r="11" fill="#7c3aed" stroke="#fff" strokeWidth="2" />
+        <path d="M41 45l4 4 7-9" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "password-generator") {
+    return (
+      <>
+        <path d="M20 28v-8a12 12 0 0 1 24 0v8" fill="none" stroke="#4c1d95" strokeWidth="3.5" strokeLinecap="round" />
+        <rect x="11" y="28" width="42" height="28" rx="6" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <circle cx="22" cy="42" r="3" fill="#7c3aed" />
+        <circle cx="32" cy="42" r="3" fill="#7c3aed" />
+        <circle cx="42" cy="42" r="3" fill="#7c3aed" />
+        <path d="M18 51h28" stroke="#ddd6fe" strokeWidth="2.5" strokeLinecap="round" />
+      </>
+    );
+  }
+  if (name === "unit-converter") {
+    return (
+      <>
+        <rect x="6" y="10" width="52" height="16" rx="4" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M14 10v7M22 10v5M30 10v7M38 10v5M46 10v7" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M14 38h34m-5-5l5 5-5 5M50 52H16m5-5l-5 5 5 5" fill="none" stroke="#7c3aed" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "percentage-calculator") {
+    return (
+      <>
+        <rect x="10" y="6" width="44" height="52" rx="6" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <rect x="16" y="12" width="32" height="10" rx="3" fill="#ddd6fe" />
+        <circle cx="25" cy="32" r="4" fill="none" stroke="#4c1d95" strokeWidth="3" />
+        <circle cx="39" cy="48" r="4" fill="none" stroke="#4c1d95" strokeWidth="3" />
+        <path d="M40 29L24 51" stroke="#7c3aed" strokeWidth="4" strokeLinecap="round" />
+      </>
+    );
+  }
+  if (name === "age-calculator") {
+    return (
+      <>
+        <rect x="8" y="14" width="48" height="42" rx="6" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M8 26h48" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M20 8v10M44 8v10" stroke="#4c1d95" strokeWidth="3" strokeLinecap="round" />
+        <path d="M32 32v4" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M32 29c-2 2 0 3 0 3s2-1 0-3z" fill="#7c3aed" stroke="#7c3aed" strokeWidth="1.5" />
+        <rect x="21" y="36" width="22" height="9" rx="3" fill="#7c3aed" />
+        <circle cx="16" cy="38" r="2" fill="#7c3aed" /><circle cx="48" cy="38" r="2" fill="#7c3aed" />
+        <path d="M16 50h32" stroke="#ddd6fe" strokeWidth="2.5" strokeLinecap="round" />
+      </>
+    );
+  }
+  if (name === "bmi-calculator") {
+    return (
+      <>
+        <rect x="6" y="8" width="14" height="48" rx="4" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M6 18h7M6 28h7M6 38h7M6 48h7" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <rect x="26" y="26" width="32" height="30" rx="6" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />
+        <path d="M33 38a9 9 0 0 1 18 0" fill="none" stroke="#7c3aed" strokeWidth="3" strokeLinecap="round" />
+        <path d="M42 38l4-5" stroke="#4c1d95" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M42 8v10m-4-4l4-4 4 4" fill="none" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    );
+  }
+  if (name === "tip-split-calculator") {
+    return (
+      <>
+        <path d="M10 6h34v46l-6-4-5 4-6-4-5 4-6-4-6 4z" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" strokeLinejoin="round" />
+        <path d="M17 17h20M17 26h20M17 35h10" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" />
+        <circle cx="46" cy="44" r="12" fill="#7c3aed" stroke="#fff" strokeWidth="2" />
+        <path d="M40 44h12" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="46" cy="38.500" r="2" fill="#fff" /><circle cx="46" cy="49.500" r="2" fill="#fff" />
+      </>
+    );
+  }
   return (
     <>
       <rect x="8" y="10" width="38" height="44" rx="5" fill="#fff" stroke="#4c1d95" strokeWidth="2.5" />

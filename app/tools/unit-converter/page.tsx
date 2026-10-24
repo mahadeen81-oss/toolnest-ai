@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 import UnitConverter from "@/components/tools/UnitConverter";
 
 export const metadata: Metadata = {
@@ -7,10 +9,15 @@ export const metadata: Metadata = {
 };
 
 export default function UnitConverterPage() {
+  const tool = getToolBySlug("unit-converter");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
       <span className="mb-3 inline-block rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-700">Productivity</span>
-      <h1 className="text-2xl font-bold text-slate-900">Unit Converter</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Unit Converter</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">Switch between metric and imperial measures for cooking, travel, or homework.</p>
       <p className="mt-6 rounded-3xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm leading-6 text-emerald-900">The numbers you type are processed on this page by the tool. It makes no API calls and does not save your entries.</p>
       <div className="mt-8"><UnitConverter /></div>

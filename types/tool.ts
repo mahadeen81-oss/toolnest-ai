@@ -35,4 +35,11 @@ export type ToolIllustrationName = "merge-pdf" | "qr-code-generator" | "word-cou
   | "image-to-pdf"
   | "compress-image"
   | "case-converter"
-  | "split-pdf";
+  | "split-pdf"
+  | "remove-duplicate-lines"
+  | "password-generator"
+  | "unit-converter"
+  | "percentage-calculator"
+  | "age-calculator"
+  | "bmi-calculator"
+  | "tip-split-calculator";

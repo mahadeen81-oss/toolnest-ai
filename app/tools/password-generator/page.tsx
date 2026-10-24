@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 import PasswordGenerator from "@/components/tools/PasswordGenerator";
 
 export const metadata: Metadata = {
@@ -7,9 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function PasswordGeneratorPage() {
+  const tool = getToolBySlug("password-generator");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Password Generator</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Password Generator</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">Make a fresh, hard-to-guess password with secure randomness on your device.</p>
       <p className="mt-6 rounded-3xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm leading-6 text-emerald-900">Your files and text never leave your device. Processing stays in-browser, with no uploads or API calls. Your password stays in memory only and is never sent or saved; copying happens only when you click Copy.</p>
       <div className="mt-8"><PasswordGenerator /></div>
