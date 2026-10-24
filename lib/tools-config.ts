@@ -8,6 +8,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Create benefit-led product copy for e-commerce listings.",
     category: "Marketing",
     icon: "🛍️",
+    illustration: "product-description-generator",
   },
   {
     id: "ai-writer",
@@ -16,6 +17,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Turn a topic and a tone into original, ready-to-use text.",
     category: "Writing",
     icon: "✍️",
+    illustration: "ai-writer",
   },
   {
     id: "text-summarizer",
@@ -24,6 +26,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Paste any text and get a clear, concise summary.",
     category: "Productivity",
     icon: "🗒️",
+    illustration: "text-summarizer",
   },
   {
     id: "text-rewriter",
@@ -32,6 +35,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Rewrite text in a professional, simple, or engaging style.",
     category: "Writing",
     icon: "🔁",
+    illustration: "text-rewriter",
   },
   {
     id: "social-media-post-generator",
@@ -40,6 +44,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Generate platform-ready posts for Instagram, LinkedIn, X and more.",
     category: "Marketing",
     icon: "📣",
+    illustration: "social-media-post-generator",
   },
   {
     id: "youtube-script-generator",
@@ -48,6 +53,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Build a structured script with an intro, body and conclusion.",
     category: "Content Creation",
     icon: "🎬",
+    illustration: "youtube-script-generator",
   },
   {
     id: "idea-generator",
@@ -56,6 +62,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Get 10 fresh content or business ideas for any topic.",
     category: "Content Creation",
     icon: "💡",
+    illustration: "idea-generator",
   },
   {
     id: "title-generator",
@@ -64,6 +71,7 @@ export const TOOLS: ToolMeta[] = [
     description: "Generate 10 engaging titles for any topic in seconds.",
     category: "Content Creation",
     icon: "🏷️",
+    illustration: "title-generator",
   },
   {
     id: "resume-bullet-generator",

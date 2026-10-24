@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import ToolRunner from "@/components/tools/ToolRunner";
+import ToolIllustration from "@/components/ToolIllustration";
+import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
   title: "Product Description Generator",
@@ -8,9 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function ProductDescriptionGeneratorPage() {
+  const tool = getToolBySlug("product-description-generator");
+  const illustration = tool?.illustration;
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-slate-900">Product Description Generator</h1>
+      <div className="flex items-center gap-4">
+        {illustration && <ToolIllustration name={illustration} category={tool?.category} size={72} />}
+        <h1 className="text-2xl font-bold text-slate-900">Product Description Generator</h1>
+      </div>
       <p className="mt-2 max-w-2xl text-slate-500">
         Share a product name and its key details, choose a tone, and create
         benefit-led copy for your e-commerce listing.
