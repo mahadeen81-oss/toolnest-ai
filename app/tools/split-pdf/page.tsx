@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import SplitPdf from "@/components/tools/SplitPdf";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Split PDF",
@@ -30,6 +31,7 @@ export default function SplitPdfPage() {
           <li>Keep a copy of the original document, especially when it contains signatures or fillable fields. Open each downloaded PDF to check its order and contents.</li>
         </ol>
       </section>
+      <ToolGuide toolId="split-pdf" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import WordCounter from "@/components/tools/WordCounter";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Word Counter",
@@ -52,6 +53,7 @@ export default function WordCounterPage() {
           </li>
         </ol>
       </section>
+      <ToolGuide toolId="word-counter" />
     </div>
   );
 }
