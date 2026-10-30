@@ -783,4 +783,528 @@ export const TOOL_GUIDES: Record<string, ToolGuideData> = {
       },
     ],
   },
+  "cover-letter-generator": {
+    title: "Write a specific, evidence-based letter",
+    introduction:
+      "Turn role details and real experience into a first draft. Add a few relevant facts, edit for the employer and your voice, then verify every sentence before sending.",
+    sections: [
+      {
+        type: "steps",
+        title: "Draft in three passes",
+        items: [
+          "Enter the listing’s job title and, if known, the employer’s name.",
+          "Add relevant skills or tasks using facts you can explain.",
+          "Choose a tone, generate, and verify each claim against your notes.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: link experience to a role",
+        context:
+          "A support worker applies for a customer success role and wants to avoid unsupported achievements.",
+        inputLabel: "Details",
+        input:
+          "Answered customer questions, noted recurring issues, and helped train new colleagues.",
+        outputLabel: "Possible sentence",
+        output:
+          "My support experience taught me to listen closely, track recurring concerns, and share useful guidance with teammates.",
+        note:
+          "Add a measurable result only if you can verify and discuss it.",
+      },
+      {
+        type: "tips",
+        title: "Polish before sending",
+        items: [
+          "Connect one job requirement to a specific task you handled.",
+          "Replace broad adjectives with actions from your experience.",
+          "Check names, greeting, contact details, and closing.",
+        ],
+      },
+      {
+        type: "limits",
+        title: "Limits to keep in mind",
+        text:
+          "The tool cannot verify your history or know what an employer values. It may sound generic or misstate a detail. Confirm every sentence, remove claims you cannot support, and follow the application instructions.",
+      },
+      {
+        type: "faq",
+        title: "Letter questions",
+        items: [
+          {
+            question: "Can I send the draft unchanged?",
+            answer:
+              "Review it first, tailor the opening, and proofread names and claims.",
+          },
+          {
+            question: "What if I do not know the company?",
+            answer:
+              "Leave the optional field blank and use the listing’s greeting guidance.",
+          },
+          {
+            question: "What happens to my application details?",
+            answer:
+              "Your job and experience details are forwarded to Google Gemini to create a letter. ToolNest offers no account registration, and this screen has no archive of earlier requests. Leave passwords and confidential employer information out.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
+  "word-counter": {
+    title: "Use counts to edit with purpose",
+    introduction:
+      "Watch the totals while preparing an assignment, application, post, or short response. Different limits measure different things, so match the displayed count to the destination’s instructions and confirm its own rules.",
+    sections: [
+      {
+        type: "example",
+        title: "Example: fit a form limit",
+        context:
+          "A form asks for fewer than 100 words and also sets a character cap.",
+        inputLabel: "Sample text",
+        input:
+          "I scheduled volunteers and sent supply reminders before each event.",
+        outputLabel: "Check",
+        output:
+          "10 words; 67 characters with spaces.",
+        note:
+          "Check the receiving form too; it may count punctuation or line breaks differently.",
+      },
+      {
+        type: "steps",
+        title: "Three steps for a quick count",
+        items: [
+          "Type or paste the passage; totals update as it changes.",
+          "Choose words, either character count, sentences, or paragraphs.",
+          "Edit your draft and select Clear before measuring another text.",
+        ],
+      },
+      {
+        type: "faq",
+        title: "Counting questions",
+        items: [
+          {
+            question: "How does the time estimate work?",
+            answer:
+              "It uses 200 words per minute; real reading speed varies.",
+          },
+          {
+            question: "Why do counts sometimes differ?",
+            answer:
+              "Apps may treat hyphens, symbols, and line breaks differently. Follow the receiving form’s count for strict limits.",
+          },
+          {
+            question: "Does counting send text anywhere?",
+            answer:
+              "Browser-side JavaScript measures your text without routing it through a text service. There is no account step or page for revisiting earlier entries; clear the field on shared devices.",
+            privacy: true,
+          },
+        ],
+      },
+      {
+        type: "tips",
+        title: "Use the totals wisely",
+        items: [
+          "Do not add filler just to approach a maximum.",
+          "Use characters with spaces unless instructions say otherwise.",
+          "Trim repetition without removing context your reader needs.",
+        ],
+      },
+      {
+        type: "limits",
+        title: "Counting limitations",
+        text:
+          "Platforms can treat hyphens, emoji, or languages without spaces differently. Reading time is approximate, and counts cannot tell whether a draft is clear or complete.",
+      },
+    ],
+  },
+  "case-converter": {
+    title: "Match capitalization to the destination",
+    introduction:
+      "Convert a heading, label, or phrase, then check the result against its destination. Title-case rules vary, while identifier styles remove spaces and punctuation. Automatic conversion is a starting point, not a style guide. Sentence case often suits paragraphs; uppercase is usually clearer for short labels than long passages.",
+    sections: [
+      {
+        type: "tips",
+        title: "Three checks after conversion",
+        items: [
+          "Keep the original before using a joined identifier format.",
+          "Restore preferred casing for names, acronyms, and brands.",
+          "Check your publisher’s rules for title capitalization.",
+        ],
+      },
+      {
+        type: "steps",
+        title: "Convert in three steps",
+        items: [
+          "Paste text into the field.",
+          "Choose a case style and inspect the replacement.",
+          "Correct exceptions, then copy or clear the result.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: make a code label",
+        context:
+          "Turn a report heading into a lower-case identifier.",
+        inputLabel: "Input",
+        input: "Monthly Sales Report",
+        outputLabel: "snake_case",
+        output: "monthly_sales_report",
+        note:
+          "Add any required prefix or special acronym styling afterward.",
+      },
+      {
+        type: "limits",
+        title: "Limitations",
+        text:
+          "The converter does not know brand rules or every language’s conventions. Identifier formats discard punctuation, and automatic capitalization may not suit a name. Compare with the original before using the result.",
+      },
+      {
+        type: "faq",
+        title: "Format questions",
+        items: [
+          {
+            question: "Is Title Case universal?",
+            answer:
+              "No. Apply the capitalization rule required by your publication.",
+          },
+          {
+            question: "Can I restore the original?",
+            answer:
+              "There is no undo control, so save a copy first.",
+          },
+          {
+            question: "Is a conversion sent to a service?",
+            answer:
+              "Case changes stay within this browser tab. Copy touches the clipboard only after your click; this utility has no sign-in or record of conversions to browse later.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
+  "image-to-pdf": {
+    title: "Turn selected pictures into a PDF",
+    introduction:
+      "Combine photographed notes, receipts, or scans in one document. Arrange the previews first, then choose A4 or a page fitted to each image for your intended use.",
+    sections: [
+      {
+        type: "example",
+        title: "Example: combine receipts",
+        context:
+          "Three JPG receipts need to be sent as one document.",
+        inputLabel: "Files",
+        input: "March, April, and May receipts",
+        outputLabel: "PDF",
+        output: "Three pages in the order shown in the preview list.",
+        note:
+          "Reorder if needed, then open the file to check readability.",
+      },
+      {
+        type: "tips",
+        title: "Before exporting",
+        items: [
+          "Choose sharp JPG or PNG images; export cannot fix blur.",
+          "Use A4 for familiar print pages or Fit to preserve image proportions.",
+          "Check order before downloading forms or records.",
+        ],
+      },
+      {
+        type: "steps",
+        title: "Make a file in three steps",
+        items: [
+          "Select JPG or PNG images and wait for previews.",
+          "Reorder or remove pages, then choose a page size.",
+          "Download one PDF and inspect its pages before sharing.",
+        ],
+      },
+      {
+        type: "faq",
+        title: "Export questions",
+        items: [
+          {
+            question: "Which formats can I select?",
+            answer:
+              "JPG/JPEG and PNG are supported; other selections are skipped.",
+          },
+          {
+            question: "How are pages ordered?",
+            answer:
+              "Each image becomes a page in the order shown in the list.",
+          },
+          {
+            question: "Where does image conversion happen?",
+            answer:
+              "The browser reads the JPG or PNG bytes and jsPDF creates the document here; this tool has no upload step. It also provides no account or file gallery.",
+            privacy: true,
+          },
+        ],
+      },
+      {
+        type: "limits",
+        title: "Limitations",
+        text:
+          "Exporting cannot sharpen a photo or correct perspective. A picture-based PDF is not searchable OCR text, and its size can vary. Use a sharp, high-resolution source when a photo contains small text.",
+      },
+    ],
+  },
+  "compress-image": {
+    title: "Balance image quality and file size",
+    introduction:
+      "The tool creates JPEG copies without changing pixel dimensions. Compare each result with its source: a quality setting that suits a photo may harm small text or sharp graphics.",
+    sections: [
+      {
+        type: "limits",
+        title: "Know what compression changes",
+        text:
+          "JPEG is lossy; fine edges can soften, and transparent PNG areas turn white. An already optimized image may grow. Keep the original when transparency or exact pixels matter.",
+      },
+      {
+        type: "steps",
+        title: "Compress in three steps",
+        items: [
+          "Select JPG or PNG files and set the quality slider.",
+          "Compress, then compare sizes and inspect each preview.",
+          "Adjust quality if needed and download acceptable JPEGs separately.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Illustrative example: results vary by image",
+        context:
+          "A 2.4 MB image might produce a 620 KB JPEG at 75% quality; actual results vary by image.",
+        inputLabel: "Original",
+        input: "2.4 MB photo",
+        outputLabel: "Example result",
+        output: "620 KB JPEG, about 74% smaller.",
+        note:
+          "Results depend on image content; inspect detail at full size.",
+      },
+      {
+        type: "tips",
+        title: "Practical checks",
+        items: [
+          "Start near the middle of the slider and inspect detail.",
+          "Keep transparent art in PNG; this tool fills clear areas white.",
+          "If the output grows, use the source file instead.",
+        ],
+      },
+      {
+        type: "faq",
+        title: "Compression questions",
+        items: [
+          {
+            question: "Does quality resize the image?",
+            answer:
+              "No. The canvas keeps the source pixel width and height.",
+          },
+          {
+            question: "Can I keep my original?",
+            answer:
+              "Yes. The result is a separate JPEG download.",
+          },
+          {
+            question: "Is an image sent to a server?",
+            answer:
+              "Canvas re-encodes each picture in this browser rather than sending it to a remote processor. No sign-in is involved, and the tool offers no list of past compression jobs.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
+  "merge-pdf": {
+    title: "Combine documents in the right order",
+    introduction:
+      "Collect related documents into one file for review or sharing. The list order determines the output; all pages from each source stay together. Use readable, unlocked PDFs and check the merged copy.",
+    sections: [
+      {
+        type: "steps",
+        title: "Merge in three steps",
+        items: [
+          "Select two or more PDF files; add more if needed.",
+          "Reorder the list and remove any incorrect selection.",
+          "Merge, download, then review the combined document.",
+        ],
+      },
+      {
+        type: "limits",
+        title: "Limitations",
+        text:
+          "Page copying may not preserve bookmarks, signatures, or form behavior. Encrypted, damaged, or unsupported files can fail. Keep originals and inspect the new PDF in a reader.",
+      },
+      {
+        type: "tips",
+        title: "Useful habits",
+        items: [
+          "Place a cover sheet before the main report and appendices.",
+          "Open source files first if you suspect damage.",
+          "Retain signed originals and documents with important forms.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: project packet",
+        context:
+          "A student needs a cover sheet, report, and two appendices together.",
+        inputLabel: "File order",
+        input: "cover, report, appendix A, appendix B",
+        outputLabel: "Output",
+        output: "One PDF with the four sources in sequence.",
+        note:
+          "Check section boundaries after export. If the device slows down, merge smaller groups and review each file.",
+      },
+      {
+        type: "faq",
+        title: "Merge questions",
+        items: [
+          {
+            question: "Can I reorder the files?",
+            answer:
+              "Yes. Use the move controls before merging.",
+          },
+          {
+            question: "Why is a password-protected PDF rejected?",
+            answer:
+              "This tool cannot open encrypted PDFs. If permitted, export an unlocked copy with a trusted PDF app.",
+          },
+          {
+            question: "Where does the merge take place?",
+            answer:
+              "pdf-lib reads each source in the browser, writes a combined blob, and starts a local download; there is no server submission. The tool has no account gate or saved-file shelf.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
+  "split-pdf": {
+    title: "Keep the pages needed for your task",
+    introduction:
+      "Extract selected pages into one smaller PDF or separate files. Enter numbers from the PDF sequence; printed page labels can differ from the actual order. A range includes both endpoints: 2-4 selects pages 2, 3, and 4.",
+    sections: [
+      {
+        type: "tips",
+        title: "Check your selection",
+        items: [
+          "Use the displayed total; printed labels may start later.",
+          "Separate entries with commas and ranges with a hyphen.",
+          "Keep the source if signatures or form fields matter.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: select pages",
+        context:
+          "A 12-page guide has a checklist on pages two, three, and nine.",
+        inputLabel: "Page selection",
+        input: "2-3, 9",
+        outputLabel: "Combined mode",
+        output: "One PDF with three pages in the entered order.",
+        note:
+          "Choose Separate PDFs for one download per page.",
+      },
+      {
+        type: "limits",
+        title: "Limitations",
+        text:
+          "The new PDF may not retain bookmarks, signatures, or interactive fields. Damaged or encrypted files can fail. The source is unchanged; inspect each download before relying on it.",
+      },
+      {
+        type: "steps",
+        title: "Extract in three steps",
+        items: [
+          "Choose a PDF and wait for its page count.",
+          "Enter selections, such as 1-3, 5, 8-10, then pick an output mode.",
+          "Select Split PDF and open the resulting downloads to verify them.",
+        ],
+      },
+      {
+        type: "faq",
+        title: "Page extraction questions",
+        items: [
+          {
+            question: "Can I mix ranges and single pages?",
+            answer:
+              "Yes. Enter 1-3, 5, 8-10; duplicates and overlaps are rejected.",
+          },
+          {
+            question: "What makes a range invalid?",
+            answer:
+              "Use ascending numbers within the displayed page count.",
+          },
+          {
+            question: "Is the source sent to a backend?",
+            answer:
+              "pdf-lib reads and extracts pages in the browser; the source is not sent to remote processing. No sign-in or library of earlier extracts is part of this tool.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
+  "remove-duplicate-lines": {
+    title: "Remove repeated lines with clear rules",
+    introduction:
+      "Lists copied from several sources may repeat names or entries. This tool keeps the first match and reports what it removes. Choose rules for case, spaces, blank lines, and ordering.",
+    sections: [
+      {
+        type: "faq",
+        title: "List-cleaning questions",
+        items: [
+          {
+            question: "Which duplicate remains?",
+            answer:
+              "The first match stays; later matches count as duplicates.",
+          },
+          {
+            question: "Will the list be alphabetized?",
+            answer:
+              "Only when you enable Sort A–Z; otherwise order is preserved.",
+          },
+          {
+            question: "Is the text sent elsewhere?",
+            answer:
+              "The comparison happens in browser memory as you edit, with no endpoint contact. This utility has no user profile or past-text library; Copy requires your click.",
+            privacy: true,
+          },
+        ],
+      },
+      {
+        type: "steps",
+        title: "Clean the list in three steps",
+        items: [
+          "Paste one entry per line and review the live result.",
+          "Choose which case, spacing, and blank-line differences to ignore.",
+          "Sort if order is unimportant, then copy or clear the text.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: remove repeated names",
+        context:
+          "A pasted list repeats one contact and adds spaces around another.",
+        inputLabel: "Input",
+        input: "Sam Lee\nRita Noor\nSam Lee\n  Rita Noor  ",
+        outputLabel: "Trim spaces on",
+        output: "Sam Lee\nRita Noor",
+        note:
+          "The first spelling remains; inspect it before copying.",
+      },
+      {
+        type: "limits",
+        title: "Limitations",
+        text:
+          "Matching uses whole lines, not partial phrases or multi-line records. It cannot know whether differently written names refer to one person. Trimming changes spaces around retained lines; blank lines are counted separately when that option is enabled.",
+      },
+      {
+        type: "tips",
+        title: "Choose options carefully",
+        items: [
+          "Keep case-sensitive matching for codes with meaningful capitals.",
+          "Trim spaces when pasted lines may have accidental padding.",
+          "Avoid sorting sequences where dates or priority matter.",
+        ],
+      },
+    ],
+  },
 };

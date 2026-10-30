@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import ToolRunner from "@/components/tools/ToolRunner";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Cover Letter Generator",
@@ -86,6 +87,7 @@ export default function CoverLetterGeneratorPage() {
           </li>
         </ol>
       </section>
+      <ToolGuide toolId="cover-letter-generator" />
     </div>
   );
 }

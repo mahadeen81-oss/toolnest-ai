@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import CompressImage from "@/components/tools/CompressImage";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Compress Image",
@@ -38,6 +39,7 @@ export default function CompressImagePage() {
           <li>An already optimized picture can become larger after conversion. Check the displayed savings instead of assuming every output is smaller, and keep your original for future edits.</li>
         </ol>
       </section>
+      <ToolGuide toolId="compress-image" />
     </div>
   );
 }

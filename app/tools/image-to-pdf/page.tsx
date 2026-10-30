@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import ImageToPdf from "@/components/tools/ImageToPdf";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Image to PDF",
@@ -54,6 +55,7 @@ export default function ImageToPdfPage() {
           </li>
         </ol>
       </section>
+      <ToolGuide toolId="image-to-pdf" />
     </div>
   );
 }

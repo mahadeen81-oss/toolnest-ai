@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import MergePdf from "@/components/tools/MergePdf";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Merge PDF",
@@ -37,6 +38,7 @@ export default function MergePdfPage() {
           <li>Keep original signed or interactive documents separately. Bookmarks, signatures, and form behavior may not carry across a page-based merge, so check the result carefully.</li>
         </ol>
       </section>
+      <ToolGuide toolId="merge-pdf" />
     </div>
   );
 }

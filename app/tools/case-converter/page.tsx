@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import CaseConverter from "@/components/tools/CaseConverter";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Case Converter",
@@ -39,6 +40,7 @@ export default function CaseConverterPage() {
           <li>Keep a copy of important source text before conversion. Joined formats remove punctuation and word boundaries, and Clear cannot restore a previous draft.</li>
         </ol>
       </section>
+      <ToolGuide toolId="case-converter" />
     </div>
   );
 }

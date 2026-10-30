@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import RemoveDuplicateLines from "@/components/tools/RemoveDuplicateLines";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Remove Duplicate Lines",
@@ -30,6 +31,7 @@ export default function RemoveDuplicateLinesPage() {
           <li>Sorting changes the order of kept lines. Leave it off when the original sequence represents steps, priority, or chronology; copy important source text before clearing it.</li>
         </ol>
       </section>
+      <ToolGuide toolId="remove-duplicate-lines" />
     </div>
   );
 }
