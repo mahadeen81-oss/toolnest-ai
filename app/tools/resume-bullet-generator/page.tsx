@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolGuide from "@/components/tools/ToolGuide";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import ToolRunner from "@/components/tools/ToolRunner";
@@ -41,6 +42,7 @@ export default function ResumeBulletGeneratorPage() {
           ]}
         />
       </div>
+      <ToolGuide toolId="resume-bullet-generator" />
     </div>
   );
 }

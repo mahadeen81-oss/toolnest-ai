@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolRunner from "@/components/tools/ToolRunner";
+import ToolGuide from "@/components/tools/ToolGuide";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 
@@ -29,6 +30,7 @@ export default function TextRewriterPage() {
           ]}
         />
       </div>
+      <ToolGuide toolId="text-rewriter" />
     </div>
   );
 }
