@@ -27,6 +27,44 @@ export default function GrammarMistakesPage() {
       </div>
 
       <div className="mt-10 space-y-8 text-base leading-7 text-slate-600">
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            When a sentence feels wrong, diagnose it in passes
+          </h2>
+          <p className="mt-3">
+            A quick reread can miss a familiar word that looks right but does
+            the wrong job. Instead of searching for every possible rule at
+            once, use a short sequence. First ask whether the sentence means
+            what you intend. Next locate its subject and main verb. Then check
+            small words, punctuation, and the relationship between neighboring
+            ideas. This process helps you catch errors without making every
+            sentence sound stiff.
+          </p>
+          <ol className="mt-4 list-decimal space-y-2 pl-5">
+            <li>
+              <span className="font-semibold text-slate-900">Meaning:</span>{" "}
+              identify the action, the person or thing doing it, and the point
+              you want the reader to understand.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">Structure:</span>{" "}
+              check that the subject and verb agree, and that each pronoun has
+              a clear reference.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">Small words:</span>{" "}
+              test pairs such as your/you’re and its/it’s by expanding or
+              substituting them.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">Punctuation:</span>{" "}
+              read the sentence aloud and make sure commas connect ideas
+              correctly rather than joining two complete sentences by
+              themselves.
+            </li>
+          </ol>
+        </div>
+
         <div>
           <h2 className="text-xl font-semibold text-slate-900">1. Your and you’re</h2>
           <p className="mt-3">
@@ -168,6 +206,52 @@ export default function GrammarMistakesPage() {
             use then: &ldquo;Check the address, then send the letter.&rdquo;
             The letters differ by one, so proofread comparison sentences
             carefully.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-slate-900">
+            Practice a repair without changing the meaning
+          </h2>
+          <p className="mt-3">
+            Try this sentence: “The meeting ended late, we still had time to
+            review the notes.” It contains two complete thoughts joined only by
+            a comma. Decide whether they should remain closely connected or
+            stand as separate sentences. You could write, “The meeting ended
+            late, but we still had time to review the notes,” or use a period
+            after “late.” The choice changes the relationship between the
+            ideas, so grammar is not only a matter of inserting punctuation.
+          </p>
+          <p className="mt-3">
+            Now check each revision for a clear subject and verb. “We still had
+            time” has its own subject, while “the meeting ended” has another.
+            That is why a comma alone was not enough. When you edit your own
+            work, read the sentence on both sides of the comma separately. If
+            each side can stand as a sentence, add a conjunction, use a
+            semicolon where appropriate, or split the thought.
+          </p>
+          <p className="mt-3">
+            You can use the same method for word-choice errors. Replace the
+            questionable word with a short test phrase: “you are” for
+            “you’re,” or “it is” for “it’s.” If the sentence no longer makes
+            sense, choose the other form. A useful correction keeps the idea
+            intact while making its structure easier to follow.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-slate-900">
+            Read beyond the sentence you are fixing
+          </h2>
+          <p className="mt-3">
+            A single sentence can be grammatically correct and still make a
+            paragraph confusing. Check what comes before and after it. A
+            pronoun such as “they” may be clear in isolation but unclear after
+            two groups have been mentioned. A transition may promise a contrast
+            even though the next sentence adds another example. Repeat a noun
+            or choose a more exact transition when that removes doubt. Editing
+            in context protects the flow of the paragraph instead of producing
+            a collection of technically correct lines.
           </p>
         </div>
 

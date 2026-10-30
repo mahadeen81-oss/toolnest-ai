@@ -27,6 +27,27 @@ export default function ProfessionalResumePage() {
       </div>
 
       <div className="mt-10 space-y-8 text-base leading-7 text-slate-600">
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Do this scan before opening a template
+          </h2>
+          <p className="mt-3">
+            A resume is easier to shape after you know what the application
+            needs. Read the posting once for the role, then make a short
+            evidence checklist:
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5">
+            <li>Which responsibilities appear central to the position?</li>
+            <li>Which skills can you support with a real example?</li>
+            <li>What format and contact details does the employer request?</li>
+            <li>Which older details can be removed because they do not help?</li>
+          </ul>
+          <p className="mt-3">
+            This is not a request to copy every phrase from the posting. It is a
+            way to choose relevant proof before you spend time on formatting.
+          </p>
+        </div>
+
         <div>
           <h2 className="text-xl font-semibold text-slate-900">Start with the role, not a template</h2>
           <p className="mt-3">
@@ -61,12 +82,38 @@ export default function ProfessionalResumePage() {
             Strong experience bullets explain what you did and why it mattered.
             Start with a specific action, add the task or challenge, and finish
             with a result when you can support one. For example, “Helped improve
-            onboarding” says little about the work. A more useful version might
-            be, “Rewrote 12 onboarding guides, reducing repeat setup questions
-            by 18%.” Use figures such as revenue, time saved, customer volume,
-            error rates, or project size when they are accurate. If you do not
-            know an exact percentage, describe scope or frequency instead of
-            inventing a number.
+            onboarding” says little about the work. A clearer version, if it
+            matches what you did, could be, “Rewrote onboarding guides and
+            organized setup instructions for new hires.” Add figures such as
+            revenue, time saved, customer volume, error rates, or project size
+            only when you can support them. If you do not know an exact
+            percentage, describe the scope or outcome without inventing a
+            number.
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Turn a broad duty into a specific bullet
+          </h2>
+          <p className="mt-3">
+            Begin with the plain version: “Responsible for scheduling
+            deliveries.” It describes an area of work but leaves the reader
+            unsure what you handled. A possible rewrite, only if accurate, is:
+            “Coordinated delivery schedules, confirmed changes with drivers,
+            and flagged conflicts before dispatch.”
+          </p>
+          <ol className="mt-4 list-decimal space-y-2 pl-5">
+            <li>Use a verb that reflects your actual role, not a more senior one.</li>
+            <li>Explain the process or people your work supported.</li>
+            <li>Add an outcome only when you can explain how you know it happened.</li>
+          </ol>
+          <p className="mt-3">
+            If you do not have a measured result, detail can still come from
+            scope: the type of schedule, the team involved, or the problem you
+            helped prevent. Do not turn a plausible outcome into a claim unless
+            you can support it. A resume bullet should be brief enough to scan
+            and specific enough to discuss honestly in an interview.
           </p>
         </div>
 
@@ -129,6 +176,24 @@ export default function ProfessionalResumePage() {
             to get a starting point for clearer bullets. Review every suggestion
             and keep only details that are true to your experience. Your final
             resume should sound like you and make your fit easy to understand.
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Run a final accuracy pass
+          </h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>Check that each date, title, skill, and link is correct.</li>
+            <li>Remove details that do not help explain your fit for this role.</li>
+            <li>Read every bullet aloud and keep only claims you can defend.</li>
+            <li>Confirm the saved file opens and its headings remain readable.</li>
+          </ul>
+          <p className="mt-3">
+            The final question is simple: could you describe the work behind
+            every line without needing to reinterpret it? If not, revise the
+            wording or leave the claim out. Open each portfolio or project link
+            to confirm it still shows the work you intend to share.
           </p>
         </div>
       </div>
