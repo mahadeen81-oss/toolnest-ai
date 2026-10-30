@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolRunner from "@/components/tools/ToolRunner";
+import ToolGuide from "@/components/tools/ToolGuide";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 
@@ -50,6 +51,7 @@ export default function ProductDescriptionGeneratorPage() {
           ]}
         />
       </div>
+      <ToolGuide toolId="product-description-generator" />
     </div>
   );
 }

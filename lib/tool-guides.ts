@@ -438,4 +438,349 @@ export const TOOL_GUIDES: Record<string, ToolGuideData> = {
       },
     ],
   },
+
+  "ai-writer": {
+    title: "A guide to drafting clear, original writing",
+    introduction:
+      "AI Writer creates a draft from a topic and tone. Use it when you need a starting paragraph, explainer, or first version to edit. Treat the result as a draft: add your own details, check factual statements, and adjust the wording for its readers.",
+    sections: [
+      {
+        type: "steps",
+        title: "Move from topic to a useful first draft",
+        items: [
+          "Choose one topic and reader instead of asking for several unrelated pieces at once.",
+          "Select a suitable tone, generate the draft, and mark sentences that need your own details or evidence.",
+          "Edit structure and claims before sharing; keep only lines that match your purpose and voice.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: outline a small reading habit",
+        context:
+          "A writer wants a friendly opening for a short piece about fitting reading into a busy routine.",
+        inputLabel: "Topic and tone",
+        input: "Ways to fit reading into a busy day — Friendly",
+        outputLabel: "Possible draft passage",
+        output:
+          "Reading does not need to take an entire evening. A few pages during a break or before bed can make room for a quieter moment. Choose a book you want to read, keep it nearby, and build the habit at a pace that suits you.",
+        note:
+          "Add your own circumstances or examples instead of presenting general advice as personal experience.",
+      },
+      {
+        type: "tips",
+        title: "Make the draft sound like it belongs to you",
+        items: [
+          "Use the tone menu as a starting signal, then revise phrases that sound unlike you.",
+          "Narrow the topic by naming its reader and purpose; “explain this to a first-time renter” gives a clearer direction than “write about housing.”",
+          "Replace broad advice with an example you know to be true and are allowed to share.",
+          "Check factual claims independently; the tool does not provide sources for them.",
+        ],
+      },
+      {
+        type: "limits",
+        title: "What a first draft cannot establish",
+        text:
+          "The generator does not research a topic or know which details are current for your situation. It can produce confident wording that is incomplete or mistaken, and it may add assumptions that were not in your prompt. Verify facts, permissions, names, and dates before using the text.",
+      },
+      {
+        type: "faq",
+        title: "Questions about AI Writer",
+        items: [
+          {
+            question: "How long is the generated draft?",
+            answer:
+              "The prompt asks for about 150 to 300 words. The response can vary, so check its length and trim or expand it yourself.",
+          },
+          {
+            question: "Can it add sources to support claims?",
+            answer:
+              "It does not research or cite sources. Find reliable references separately and verify each factual statement.",
+          },
+          {
+            question: "What happens to my topic?",
+            answer:
+              "To generate a draft, Google Gemini receives the topic and tone you enter. ToolNest has no user sign-up, and its pages do not collect earlier prompts into a history. Leave passwords and confidential text out.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
+
+  "product-description-generator": {
+    title: "Write product copy from verified details",
+    introduction:
+      "A listing should explain what an item is and which details may help a buyer decide. This generator turns a product name and feature list into a draft. Start with accurate specifications, then compare every claim with the product and its marketplace.",
+    sections: [
+      {
+        type: "example",
+        title: "Example: translate features into clear listing copy",
+        context:
+          "A shop owner has confirmed the capacity, material, lid, and carry loop for a reusable bottle.",
+        inputLabel: "Product and verified features",
+        input:
+          "Stainless steel water bottle; 750 ml capacity; screw-top lid; carry loop. Professional tone.",
+        outputLabel: "Possible description excerpt",
+        output:
+          "Carry water in a 750 ml stainless steel bottle with a screw-top lid and carry loop. The loop offers another way to hold it or attach it to a bag, while the capacity and material make the listing easy to compare.",
+        note:
+          "The output should not imply insulation, leak resistance, or other features unless you provide and verify them.",
+      },
+      {
+        type: "limits",
+        title: "Keep marketing language tied to evidence",
+        text:
+          "The generator cannot inspect a product, confirm its specifications, or check whether a claim meets a marketplace rule. It may overstate a benefit or infer a feature from the name. Review every measurement, compatibility statement, material, safety claim, and warranty against your own product records.",
+      },
+      {
+        type: "steps",
+        title: "Prepare a listing draft",
+        items: [
+          "Enter the product name buyers will recognize, avoiding internal codes unless they appear in the listing.",
+          "Add verified features such as dimensions, material, included parts, or intended use; leave uncertain details out.",
+          "Choose Professional, Persuasive, or Casual and generate the description.",
+          "Compare each sentence with the product and the marketplace rules, then edit for your brand and required format.",
+        ],
+      },
+      {
+        type: "faq",
+        title: "Product copy questions",
+        items: [
+          {
+            question: "Will the generator verify product claims?",
+            answer:
+              "No. It works from the details you provide. Confirm specifications and any performance or safety statement before publishing.",
+          },
+          {
+            question: "Can I use the result on any store?",
+            answer:
+              "Use it as a draft, then check the listing rules, required fields, and style for your specific marketplace.",
+          },
+          {
+            question: "Where do the product details go?",
+            answer:
+              "Google Gemini receives the product name, details, and tone you enter. ToolNest has no account-creation feature and its pages do not keep an input history. Do not submit passwords or confidential text.",
+            privacy: true,
+          },
+        ],
+      },
+      {
+        type: "tips",
+        title: "Give the tool facts it can use responsibly",
+        items: [
+          "Separate confirmed specifications from opinions so you can audit the wording afterward.",
+          "Describe the intended buyer or use case only when it is accurate for the product.",
+          "Prefer a concrete feature and its practical relevance over unsupported superlatives.",
+          "Remove claims about certifications, reviews, discounts, or compatibility unless you can verify them.",
+        ],
+      },
+    ],
+  },
+
+  "social-media-post-generator": {
+    title: "Shape a post for its platform and audience",
+    introduction:
+      "A social post needs a clear point, a suitable voice, and a reason for its reader to care. This tool drafts one post from a topic, platform, and tone. Add real announcement details, check the call to action, and adapt the draft before publishing.",
+    sections: [
+      {
+        type: "tips",
+        title: "Give the post a real purpose",
+        items: [
+          "Decide whether the post should explain, invite, announce, or start a discussion before entering a topic.",
+          "Name the intended audience or the detail they need; this helps avoid a generic opening.",
+          "Use a tone that fits your account and the subject rather than choosing the boldest option by default.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: announce a project handoff checklist",
+        context:
+          "A small design team wants a professional LinkedIn post about a checklist it has actually prepared.",
+        inputLabel: "Topic, platform, and tone",
+        input:
+          "A checklist for clearer project handoffs — LinkedIn — Professional",
+        outputLabel: "Possible post",
+        output:
+          "A smoother project handoff starts with shared context. Our checklist helps teams record owners, open questions, and next steps before work changes hands. What detail do you always include in a handoff?",
+        note:
+          "Use the team wording only if the checklist exists and is ready to share. Replace it with accurate details about your own announcement.",
+      },
+      {
+        type: "faq",
+        title: "Before you post",
+        items: [
+          {
+            question: "Does the tool publish to my account?",
+            answer:
+              "No. It returns text for you to review and post through your own platform account.",
+          },
+          {
+            question: "Will every post include hashtags?",
+            answer:
+              "The prompt asks for hashtags only when appropriate. Check relevance and current platform conventions before keeping them.",
+          },
+          {
+            question: "What information is sent for a post?",
+            answer:
+              "The post topic, platform, and tone go to Google Gemini to create the draft. You do not register for a ToolNest account, and the pages provide no saved list of earlier inputs. Keep passwords and confidential text out.",
+            privacy: true,
+          },
+        ],
+      },
+      {
+        type: "steps",
+        title: "Turn an idea into a reviewable post",
+        items: [
+          "Write the subject as one plain sentence and include the key fact or announcement that must stay accurate.",
+          "Choose the platform and tone that match the intended account and audience.",
+          "Generate the post, then check names, links, dates, offers, and any claim about a product or event.",
+          "Adjust line breaks and the call to action for the platform before posting manually.",
+        ],
+      },
+      {
+        type: "limits",
+        title: "What the draft cannot know about your account",
+        text:
+          "The generator cannot see your audience, brand guide, previous posts, or live platform rules. It may suggest a tone or call to action that does not fit your organization. Review claims and permissions, and confirm the post works in the context of your account.",
+      },
+    ],
+  },
+
+  "email-reply-generator": {
+    title: "Draft a thoughtful reply without missing your point",
+    introduction:
+      "Email Reply Generator uses an incoming message, your key points, and a tone to suggest a reply body. It can help organize a response when you know what to say but need phrasing. Review the recipient, commitments, and final draft before sending.",
+    sections: [
+      {
+        type: "faq",
+        title: "Questions before replying",
+        items: [
+          {
+            question: "Will the tool send the email?",
+            answer:
+              "No. It drafts a body for you to copy, check, and send from your own email account.",
+          },
+          {
+            question: "Can it decide what I should promise?",
+            answer:
+              "No. State your intended commitments in Key points and verify dates, names, and obligations before using the draft.",
+          },
+          {
+            question: "How is the message handled?",
+            answer:
+              "The email and key points you provide are sent to Google Gemini to create a reply. ToolNest offers no accounts; its pages do not keep an input history. Remove passwords and confidential text before submitting.",
+            privacy: true,
+          },
+        ],
+      },
+      {
+        type: "steps",
+        title: "Build a reply that says what you intend",
+        items: [
+          "Paste only the relevant part of the incoming email, keeping enough context to understand the request.",
+          "List the points you actually want to include, especially the answer, action, and any timing.",
+          "Pick a tone that suits the relationship, then generate a draft.",
+          "Check every commitment and detail, add a greeting or sign-off if needed, and send it yourself.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: confirm a deadline clearly",
+        context:
+          "A colleague asks whether updated workshop notes can be shared before Friday. The reply should confirm a Thursday delivery and offer a useful format.",
+        inputLabel: "Message and key points",
+        input:
+          "Email: “Could you send the updated workshop notes before Friday?” Key points: Thank them, confirm Thursday afternoon, ask whether PDF is useful. Tone: Friendly.",
+        outputLabel: "Possible reply body",
+        output:
+          "Thanks for checking in. I’ll send the updated workshop notes on Thursday afternoon. Would a PDF be useful?",
+        note:
+          "The reply is intentionally limited to the supplied points; add a greeting or context if the conversation needs it.",
+      },
+      {
+        type: "limits",
+        title: "Keep control of the relationship and commitments",
+        text:
+          "The tool cannot see earlier messages that you did not include, your calendar, or what you are authorized to promise. It may soften a boundary or make an uncertain date sound definite. Compare the draft with the full thread and adjust it before sending.",
+      },
+      {
+        type: "tips",
+        title: "Make the inputs easier to review",
+        items: [
+          "Remove unrelated paragraphs and signatures so the request stays visible.",
+          "Write key points as actions or answers instead of broad goals such as “be helpful.”",
+          "Use Brief for a concise response, or Formal when the relationship calls for more distance.",
+        ],
+      },
+    ],
+  },
+
+  "youtube-script-generator": {
+    title: "Plan a video script that sounds natural aloud",
+    introduction:
+      "A useful video script gives viewers a reason to stay and moves through points in a clear order. This generator drafts spoken narration with an introduction, main points, and conclusion from a topic, duration, and style. Add your examples and footage notes, then read it aloud and adjust the pacing.",
+    sections: [
+      {
+        type: "limits",
+        title: "Treat timing and facts as estimates to review",
+        text:
+          "The selected duration is guidance, not a measured runtime. Speaking pace, pauses, demonstrations, and edits change the final length. The generator also does not research your subject or know which visuals you have. Verify factual claims and time a read-through before recording.",
+      },
+      {
+        type: "steps",
+        title: "Set up a script for the video you can make",
+        items: [
+          "Describe one video topic and the useful takeaway a viewer should leave with.",
+          "Choose a target duration and a style that fits both the subject and your delivery.",
+          "Review the Introduction, Main Points, and Conclusion; check that the middle answers the opening.",
+          "Add real demonstrations or visual notes, then rehearse and revise for breath and pacing.",
+        ],
+      },
+      {
+        type: "tips",
+        title: "Improve the script before you record",
+        items: [
+          "Open with a specific viewer question or problem instead of a long channel introduction.",
+          "Break complicated explanations into short spoken sentences and define unfamiliar terms.",
+          "Use examples you can demonstrate or substantiate; remove claims you cannot support.",
+        ],
+      },
+      {
+        type: "example",
+        title: "Example: structure a short balcony-gardening video",
+        context:
+          "A creator is planning an educational video about starting a small balcony herb garden.",
+        inputLabel: "Topic, duration, and style",
+        input:
+          "How to start a small balcony herb garden — 1–3 minutes — Educational",
+        outputLabel: "Possible script excerpt",
+        output:
+          "Introduction: Want to grow herbs on a balcony? First check the light and where a container can sit safely. Main Points: Choose pots with drainage, place them where you can reach them, and label what you plant. Conclusion: Start with herbs you use, then adjust as you learn about your space.",
+        note:
+          "This illustrative excerpt is not a full script or duration guarantee. Adapt it to the actual space and plants shown.",
+      },
+      {
+        type: "faq",
+        title: "Planning a video with a generated script",
+        items: [
+          {
+            question: "Will the script fit the selected duration?",
+            answer:
+              "The duration guides the draft but does not guarantee runtime. Rehearse it with the intended pauses and demonstrations.",
+          },
+          {
+            question: "Does it include camera directions?",
+            answer:
+              "The prompt requests spoken narration. Add shot, graphic, and demonstration notes that match your available footage.",
+          },
+          {
+            question: "What does the tool send to Gemini?",
+            answer:
+              "Your selected topic, duration, and style are sent to Google Gemini for script generation. ToolNest operates without user accounts; its tool pages do not save a log of submitted inputs. Never paste passwords or confidential text.",
+            privacy: true,
+          },
+        ],
+      },
+    ],
+  },
 };
