@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 import ToolRunner from "@/components/tools/ToolRunner";
+import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
   title: "Email Reply Generator",
@@ -47,6 +48,7 @@ export default function EmailReplyGeneratorPage() {
           ]}
         />
       </div>
+      <ToolGuide toolId="email-reply-generator" />
     </div>
   );
 }
