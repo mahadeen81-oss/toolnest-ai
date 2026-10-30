@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms that govern use of ToolNest AI.",
+  description:
+    "Review the rules for using ToolNest AI, including acceptable use, AI-generated results, service limitations, and changes to these terms.",
 };
 
 export default function TermsPage() {

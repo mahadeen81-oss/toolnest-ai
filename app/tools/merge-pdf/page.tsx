@@ -5,7 +5,7 @@ import { getToolBySlug } from "@/lib/tools-config";
 import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
-  title: "Merge PDF",
+  title: "Merge PDF Files Online",
   description: "Combine two or more PDFs in your browser. Reorder files and download one merged PDF without uploading your documents.",
 };
 

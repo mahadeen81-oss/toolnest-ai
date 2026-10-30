@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Word Count Guide: How Long Should Your Essay, Blog Post, or Resume Be?",
+  title: "How Long Should Essays, Blogs, and Resumes Be?",
   description:
     "Use practical word-count ranges for essays, blog posts, and resumes, then edit for purpose and clarity instead of padding to reach a number.",
 };

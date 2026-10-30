@@ -5,8 +5,9 @@ import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
-  title: "Text Rewriter",
-  description: "Rewrite text in a professional, simple, or engaging style.",
+  title: "AI Text Rewriter",
+  description:
+    "Revise a passage for a simpler, professional, or engaging tone, then compare the draft with your original before using it.",
 };
 
 export default function TextRewriterPage() {

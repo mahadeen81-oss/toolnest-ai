@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Write YouTube Scripts That Keep Viewers Watching",
+  title: "Write YouTube Scripts That Hold Attention",
   description:
     "Plan YouTube scripts around a clear promise, useful demonstrations, natural spoken language, and an honest payoff, with practical examples.",
 };

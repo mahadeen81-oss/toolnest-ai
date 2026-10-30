@@ -6,7 +6,8 @@ import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
   title: "YouTube Script Generator",
-  description: "Build a structured script with an intro, body and conclusion.",
+  description:
+    "Draft a structured YouTube script from your topic and video format, then check factual claims and revise the wording for your delivery.",
 };
 
 export default function YouTubeScriptGeneratorPage() {

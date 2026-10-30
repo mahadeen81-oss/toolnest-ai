@@ -5,8 +5,9 @@ import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
-  title: "AI Writer",
-  description: "Turn a topic and a tone into original, ready-to-use text.",
+  title: "AI Writing Assistant",
+  description:
+    "Draft text from a topic, audience, and tone with the AI Writer. Review the result carefully and revise it to fit your purpose and voice.",
 };
 
 export default function AIWriterPage() {

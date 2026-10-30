@@ -6,7 +6,8 @@ import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
   title: "AI Idea Generator",
-  description: "Get 10 fresh content or business ideas for any topic.",
+  description:
+    "Generate ten starting ideas for a topic, then compare them by audience, effort, and the next step you can take.",
 };
 
 export default function IdeaGeneratorPage() {

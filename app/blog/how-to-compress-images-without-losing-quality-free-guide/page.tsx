@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Compress Images Without Losing Quality (Free Guide)",
+  title: "How to Compress Images Without Losing Quality",
   description:
     "Reduce image file sizes while protecting visible detail. Understand JPEG quality, PNG transparency, size savings, and local browser compression.",
 };

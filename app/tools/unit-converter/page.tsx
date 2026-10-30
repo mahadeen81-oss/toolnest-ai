@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
+import ToolGuide from "@/components/tools/ToolGuide";
 import { getToolBySlug } from "@/lib/tools-config";
 import UnitConverter from "@/components/tools/UnitConverter";
 
@@ -45,6 +46,7 @@ export default function UnitConverterPage() {
         <h3 className="mt-4 font-semibold text-slate-900">Can temperature go below absolute zero?</h3>
         <p className="mt-1 text-sm leading-6 text-slate-600">No. The tool shows an error for values below absolute zero, such as -300 degrees Celsius.</p>
       </section>
+      <ToolGuide toolId="unit-converter" />
     </div>
   );
 }

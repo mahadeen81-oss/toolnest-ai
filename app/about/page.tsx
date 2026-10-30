@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "Learn what ToolNest AI is and why it exists.",
+  title: "About ToolNest AI",
+  description:
+    "Meet the creator of ToolNest AI, learn why the site was built, how its browser-based and AI tools work, and how to get in touch.",
 };
 
 export default function AboutPage() {

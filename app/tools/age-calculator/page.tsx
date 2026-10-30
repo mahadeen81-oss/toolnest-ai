@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
+import ToolGuide from "@/components/tools/ToolGuide";
 import { getToolBySlug } from "@/lib/tools-config";
 import AgeCalculator from "@/components/tools/AgeCalculator";
 
@@ -45,6 +46,7 @@ export default function AgeCalculatorPage() {
         <h3 className="mt-4 font-semibold text-slate-900">Which time zone is used?</h3>
         <p className="mt-1 text-sm leading-6 text-slate-600">Today is taken from your device's local date.</p>
       </section>
+      <ToolGuide toolId="age-calculator" />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Merge PDF Files on Your Phone Without Uploading Them",
+  title: "Merge PDFs on Your Phone",
   description:
     "Combine PDFs on your phone locally, arrange the file order, handle common errors, and check the finished document without uploading your files.",
 };

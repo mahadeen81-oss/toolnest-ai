@@ -24,6 +24,12 @@ export type ToolGuideData = {
   sections: ToolGuideSection[];
 };
 
+export type RelatedToolLink = {
+  href: string;
+  name: string;
+  description: string;
+};
+
 export const TOOL_GUIDES: Record<string, ToolGuideData> = {
   "title-generator": {
     title: "A practical guide to choosing a strong title",
@@ -1307,4 +1313,173 @@ export const TOOL_GUIDES: Record<string, ToolGuideData> = {
       },
     ],
   },
+};
+
+export const TOOL_RELATED_TOOLS: Record<string, RelatedToolLink[]> = {
+  "age-calculator": [
+    {
+      href: "/tools/bmi-calculator",
+      name: "BMI Calculator",
+      description:
+        "Calculate a separate height-and-weight measure; BMI is general information, not medical advice.",
+    },
+    {
+      href: "/tools/tip-split-calculator",
+      name: "Tip & Split Calculator",
+      description:
+        "Estimate per-person costs when planning a birthday or milestone gathering.",
+    },
+  ],
+  "bmi-calculator": [
+    {
+      href: "/tools/age-calculator",
+      name: "Age Calculator",
+      description:
+        "Calculate calendar age separately from the height-and-weight measurement.",
+    },
+    {
+      href: "/tools/unit-converter",
+      name: "Unit Converter",
+      description:
+        "Convert height or weight units before entering measurements.",
+    },
+  ],
+  "idea-generator": [
+    {
+      href: "/tools/social-media-post-generator",
+      name: "Social Media Post Generator",
+      description:
+        "Turn a brainstormed topic into platform-specific post drafts.",
+    },
+    {
+      href: "/tools/title-generator",
+      name: "Title Generator",
+      description:
+        "Explore headline angles for an idea you may develop into an article.",
+    },
+  ],
+  "percentage-calculator": [
+    {
+      href: "/tools/tip-split-calculator",
+      name: "Tip & Split Calculator",
+      description:
+        "Apply a tip rate and divide the resulting bill among a group.",
+    },
+    {
+      href: "/tools/compress-image",
+      name: "Compress Image",
+      description:
+        "Review the percentage saved after compressing an image.",
+    },
+  ],
+  "qr-code-generator": [
+    {
+      href: "/tools/image-to-pdf",
+      name: "Image to PDF",
+      description:
+        "Combine a QR-code image with other pages in a shareable PDF.",
+    },
+    {
+      href: "/tools/social-media-post-generator",
+      name: "Social Media Post Generator",
+      description:
+        "Draft copy for an event or campaign linked by your QR code.",
+    },
+  ],
+  "tip-split-calculator": [
+    {
+      href: "/tools/age-calculator",
+      name: "Age Calculator",
+      description:
+        "Check a birthday or milestone date while planning a shared outing.",
+    },
+    {
+      href: "/tools/percentage-calculator",
+      name: "Percentage Calculator",
+      description:
+        "Work out a tip or another percentage before splitting the bill.",
+    },
+    {
+      href: "/tools/unit-converter",
+      name: "Unit Converter",
+      description:
+        "Convert recipe quantities when planning food for a group.",
+    },
+  ],
+  "unit-converter": [
+    {
+      href: "/tools/bmi-calculator",
+      name: "BMI Calculator",
+      description:
+        "Convert height or weight measures before calculating BMI.",
+    },
+    {
+      href: "/tools/percentage-calculator",
+      name: "Percentage Calculator",
+      description:
+        "Calculate a discount rate or change alongside unit conversions.",
+    },
+    {
+      href: "/tools/tip-split-calculator",
+      name: "Tip & Split Calculator",
+      description:
+        "Estimate the shared meal cost after planning serving quantities.",
+    },
+  ],
+  "social-media-post-generator": [
+    {
+      href: "/tools/idea-generator",
+      name: "Idea Generator",
+      description:
+        "Find a starting topic before drafting posts for a platform.",
+    },
+    {
+      href: "/tools/qr-code-generator",
+      name: "QR Code Generator",
+      description:
+        "Create a scannable link for an event or resource mentioned in a post.",
+    },
+  ],
+  "title-generator": [
+    {
+      href: "/tools/idea-generator",
+      name: "Idea Generator",
+      description:
+        "Brainstorm a subject before turning one idea into a headline.",
+    },
+    {
+      href: "/tools/social-media-post-generator",
+      name: "Social Media Post Generator",
+      description:
+        "Draft a social post after settling on its topic and angle.",
+    },
+  ],
+  "image-to-pdf": [
+    {
+      href: "/tools/qr-code-generator",
+      name: "QR Code Generator",
+      description:
+        "Add a generated QR-code image to a printable or shareable PDF.",
+    },
+    {
+      href: "/tools/merge-pdf",
+      name: "Merge PDF",
+      description:
+        "Combine the finished PDF with other documents.",
+    },
+  ],
+  "compress-image": [
+    {
+      href: "/tools/percentage-calculator",
+      name: "Percentage Calculator",
+      description:
+        "Calculate or compare percentage changes alongside saved image size.",
+    },
+    {
+      href: "/tools/image-to-pdf",
+      name: "Image to PDF",
+      description:
+        "Compress image files before arranging them into a PDF.",
+    },
+  ],
 };

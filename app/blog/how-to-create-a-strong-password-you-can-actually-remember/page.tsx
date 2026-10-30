@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Create a Strong Password You Can Actually Remember",
+  title: "Create a Strong Password You Can Remember",
   description:
     "Choose between random passwords and memorable passphrases, avoid predictable patterns, and build a practical plan for secure storage and recovery.",
 };

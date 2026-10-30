@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "How ToolNest AI collects and uses information.",
+  title: "ToolNest AI Privacy Policy",
+  description:
+    "Learn what information ToolNest AI handles, how browser-based tools and AI requests differ, and what choices you have when using the site.",
 };
 
 export default function PrivacyPolicyPage() {

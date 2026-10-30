@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Write Product Descriptions That Actually Sell",
+  title: "Write Product Descriptions That Sell",
   description:
     "Learn to write persuasive product descriptions by focusing on benefits, sensory details, customer needs, scannable structure, and clear calls to action.",
 };

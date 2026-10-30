@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Write a Professional Email Reply (With Examples)",
+  title: "Write a Professional Email Reply",
   description:
     "Write clear email replies with practical examples for requests, delays, disagreements, and follow-ups, plus a checklist before sending.",
 };

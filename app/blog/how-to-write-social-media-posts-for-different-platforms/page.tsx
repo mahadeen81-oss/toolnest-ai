@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Write Social Media Posts for Different Platforms",
+  title: "Write Social Posts for Different Platforms",
   description:
     "Adapt one message for LinkedIn, Instagram, X, and Facebook with practical examples, accessible formatting, and a platform-aware editing checklist.",
 };

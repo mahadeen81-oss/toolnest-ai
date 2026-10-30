@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Summarize Long Text Without Losing the Key Points",
+  title: "Summarize Long Text Without Losing Key Points",
   description:
     "Summarize long documents while preserving conclusions, evidence, conditions, and uncertainty, with a worked example and a source-checking routine.",
 };
