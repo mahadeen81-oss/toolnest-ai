@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Practical guides and honest advice for using AI tools in everyday work.",
+  title: "Writing and Productivity Guides",
+  description:
+    "Explore practical guides on writing, productivity, PDFs, images, and everyday text, with examples and links to relevant tools.",
 };
 
 const articles = [

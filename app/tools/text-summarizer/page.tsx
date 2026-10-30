@@ -5,8 +5,9 @@ import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
-  title: "Text Summarizer",
-  description: "Paste any text and get a clear, concise summary.",
+  title: "AI Text Summarizer",
+  description:
+    "Turn pasted text into a shorter summary, then verify that key claims, qualifications, names, and dates remain accurate.",
 };
 
 export default function TextSummarizerPage() {

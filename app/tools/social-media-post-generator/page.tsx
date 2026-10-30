@@ -6,7 +6,8 @@ import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
   title: "Social Media Post Generator",
-  description: "Generate platform-ready posts for Instagram, LinkedIn, X and more.",
+  description:
+    "Draft posts for social platforms from your topic, audience, and tone, then adapt each version to the platform and your own voice.",
 };
 
 export default function SocialMediaPostGeneratorPage() {

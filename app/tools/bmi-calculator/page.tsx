@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
+import ToolGuide from "@/components/tools/ToolGuide";
 import { getToolBySlug } from "@/lib/tools-config";
 import BmiCalculator from "@/components/tools/BmiCalculator";
 
@@ -45,6 +46,7 @@ export default function BmiCalculatorPage() {
         <h3 className="mt-4 font-semibold text-slate-900">Is this medical advice?</h3>
         <p className="mt-1 text-sm leading-6 text-slate-600">No. General information only, not medical advice. Talk to a clinician about your health.</p>
       </section>
+      <ToolGuide toolId="bmi-calculator" />
     </div>
   );
 }

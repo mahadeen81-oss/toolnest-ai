@@ -5,7 +5,7 @@ import SplitPdf from "@/components/tools/SplitPdf";
 import ToolGuide from "@/components/tools/ToolGuide";
 
 export const metadata: Metadata = {
-  title: "Split PDF",
+  title: "Split PDF Pages Online",
   description: "Extract selected pages from a PDF in your browser and download them together or separately. Your files stay on your device.",
 };
 

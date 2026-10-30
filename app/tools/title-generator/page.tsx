@@ -5,8 +5,9 @@ import ToolIllustration from "@/components/ToolIllustration";
 import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
-  title: "Title Generator",
-  description: "Generate 10 engaging titles for any topic in seconds.",
+  title: "AI Title Generator",
+  description:
+    "Generate headline ideas from a topic, compare different angles, and refine a title that accurately describes your finished article.",
 };
 
 export default function TitleGeneratorPage() {

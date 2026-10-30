@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
+import ToolGuide from "@/components/tools/ToolGuide";
 import { getToolBySlug } from "@/lib/tools-config";
 import TipSplitCalculator from "@/components/tools/TipSplitCalculator";
 
@@ -45,6 +46,7 @@ export default function TipSplitCalculatorPage() {
         <h3 className="mt-4 font-semibold text-slate-900">Is the tip calculated before tax?</h3>
         <p className="mt-1 text-sm leading-6 text-slate-600">It uses whatever bill amount you enter, so include or exclude tax as you prefer.</p>
       </section>
+      <ToolGuide toolId="tip-split-calculator" />
     </div>
   );
 }

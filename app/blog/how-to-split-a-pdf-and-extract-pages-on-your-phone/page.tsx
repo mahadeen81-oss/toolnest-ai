@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Split a PDF and Extract Pages on Your Phone",
+  title: "Split a PDF and Extract Pages",
   description:
     "Extract PDF pages on your phone with clear page ranges, choose combined or separate downloads, and check the result without uploading your document.",
 };

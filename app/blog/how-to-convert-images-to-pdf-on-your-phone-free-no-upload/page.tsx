@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Convert Images to PDF on Your Phone (Free, No Upload)",
+  title: "Convert Images to PDF on Your Phone",
   description:
     "Learn how to combine phone photos into one PDF for free, arrange the pages, choose a page size, and keep your images on your device.",
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Disclaimer",
+  title: "Disclaimer and Site Limits",
   description:
     "Understand the limits of ToolNest AI tools and articles, including AI accuracy, professional advice, availability, and third-party links.",
 };

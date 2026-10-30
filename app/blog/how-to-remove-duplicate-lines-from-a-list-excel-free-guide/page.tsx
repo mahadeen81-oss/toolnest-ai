@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Remove Duplicate Lines From a List (Excel-Free Guide)",
+  title: "Remove Duplicate Lines From a List",
   description:
     "Clean a list without Excel: choose matching rules, handle spaces and blank lines, preserve order, and check your duplicate-removal results.",
 };

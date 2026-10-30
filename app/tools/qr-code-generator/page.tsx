@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import QrCodeGenerator from "@/components/tools/QrCodeGenerator";
 import ToolIllustration from "@/components/ToolIllustration";
+import ToolGuide from "@/components/tools/ToolGuide";
 import { getToolBySlug } from "@/lib/tools-config";
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function QrCodeGeneratorPage() {
         <h3 className="mt-4 font-semibold text-slate-900">Does it open my link?</h3>
         <p className="mt-1 text-sm leading-6 text-slate-600">No. The text is encoded as is and nothing is visited or checked.</p>
       </section>
+      <ToolGuide toolId="qr-code-generator" />
     </div>
   );
 }

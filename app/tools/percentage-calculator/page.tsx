@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ToolIllustration from "@/components/ToolIllustration";
+import ToolGuide from "@/components/tools/ToolGuide";
 import { getToolBySlug } from "@/lib/tools-config";
 import PercentageCalculator from "@/components/tools/PercentageCalculator";
 
@@ -45,6 +46,7 @@ export default function PercentageCalculatorPage() {
         <h3 className="mt-4 font-semibold text-slate-900">Are results rounded?</h3>
         <p className="mt-1 text-sm leading-6 text-slate-600">Results show up to six decimal places.</p>
       </section>
+      <ToolGuide toolId="percentage-calculator" />
     </div>
   );
 }

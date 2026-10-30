@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Title Case vs Sentence Case: When to Use Each Text Format",
+  title: "Title Case vs Sentence Case",
   description:
     "Compare title case and sentence case, choose a consistent style for headings, and understand uppercase, lowercase, and code-friendly naming formats.",
 };

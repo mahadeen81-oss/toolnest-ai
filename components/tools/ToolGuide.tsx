@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { TOOL_GUIDES, type ToolGuideSection } from "@/lib/tool-guides";
+import {
+  TOOL_GUIDES,
+  TOOL_RELATED_TOOLS,
+  type ToolGuideSection,
+} from "@/lib/tool-guides";
 
 function GuideSection({ section }: { section: ToolGuideSection }) {
   return (
@@ -65,22 +69,63 @@ function GuideSection({ section }: { section: ToolGuideSection }) {
 
 export default function ToolGuide({ toolId }: { toolId: string }) {
   const guide = TOOL_GUIDES[toolId];
-  if (!guide) return null;
+  const relatedTools = TOOL_RELATED_TOOLS[toolId] ?? [];
+  if (!guide && relatedTools.length === 0) return null;
 
   return (
-    <article className="mt-14 border-t border-slate-200 pt-10 dark:border-slate-700">
-      <header className="max-w-3xl">
-        <p className="text-sm font-semibold uppercase tracking-wide text-brand-600">
-          Tool guide
-        </p>
-        <h2 className="mt-2 text-2xl font-bold text-slate-900">{guide.title}</h2>
-        <p className="mt-3 leading-7 text-slate-600">{guide.introduction}</p>
-      </header>
-      <div className="mt-7 space-y-5">
-        {guide.sections.map((section) => (
-          <GuideSection key={section.title} section={section} />
-        ))}
-      </div>
-    </article>
+    <>
+      {guide && (
+        <article className="mt-14 border-t border-slate-200 pt-10 dark:border-slate-700">
+          <header className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-600">
+              Tool guide
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-slate-900">{guide.title}</h2>
+            <p className="mt-3 leading-7 text-slate-600">{guide.introduction}</p>
+          </header>
+          <div className="mt-7 space-y-5">
+            {guide.sections.map((section) => (
+              <GuideSection key={section.title} section={section} />
+            ))}
+          </div>
+        </article>
+      )}
+
+      {relatedTools.length > 0 && (
+        <section
+          aria-labelledby={`related-tools-${toolId}`}
+          className={
+            guide
+              ? "mt-10"
+              : "mt-14 border-t border-slate-200 pt-10 dark:border-slate-700"
+          }
+        >
+          <h2
+            id={`related-tools-${toolId}`}
+            className="text-xl font-bold text-slate-900"
+          >
+            Related tools
+          </h2>
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+            {relatedTools.map((tool) => (
+              <li
+                key={tool.href}
+                className="rounded-2xl border border-slate-200 bg-white/80 p-5 dark:border-slate-700 dark:bg-slate-900/50"
+              >
+                <Link
+                  href={tool.href}
+                  className="font-semibold text-brand-600 hover:underline"
+                >
+                  {tool.name}
+                </Link>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  {tool.description}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </>
   );
 }
