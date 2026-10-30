@@ -27,6 +27,39 @@ export default function ProductDescriptionsThatSellPage() {
       </div>
 
       <div className="mt-10 space-y-8 text-base leading-7 text-slate-600">
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Begin with a product brief, not a sales phrase
+          </h2>
+          <p className="mt-3">
+            Before writing, collect the information a shopper needs to make a
+            decision. A small brief prevents attractive wording from outrunning
+            the facts:
+          </p>
+          <dl className="mt-4 space-y-3">
+            <div>
+              <dt className="font-semibold text-slate-900">What is the item?</dt>
+              <dd>Use the correct product name, model, size, and version.</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-slate-900">What is verified?</dt>
+              <dd>List confirmed materials, dimensions, included parts, and care details.</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-slate-900">What might a buyer ask?</dt>
+              <dd>Note fit, compatibility, setup, delivery, or maintenance questions.</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-slate-900">What should not be promised?</dt>
+              <dd>Record limitations and claims that need evidence before publication.</dd>
+            </div>
+          </dl>
+          <p className="mt-3">
+            This brief can be a few notes. Its purpose is to give the writer a
+            reliable boundary, not to become another piece of promotional copy.
+          </p>
+        </div>
+
         <div>
           <h2 className="text-xl font-semibold text-slate-900">Lead with what the customer gains</h2>
           <p className="mt-3">
@@ -72,6 +105,28 @@ export default function ProductDescriptionsThatSellPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold text-slate-900">
+            Leave a blank when a fact is missing
+          </h2>
+          <p className="mt-3">
+            Product notes are sometimes incomplete. If a dimension, material,
+            care instruction, or compatibility detail is missing, ask the
+            responsible person or consult an approved source. Do not infer a
+            specification from a photograph or from what similar products
+            usually include. A careful description can still focus on verified
+            benefits while the unanswered detail is checked.
+          </p>
+          <p className="mt-3">
+            This also helps distinguish a benefit from a guarantee. “Designed
+            for everyday carrying” describes intended use; “will never wear
+            out” is an absolute promise that needs unusually strong support.
+            Prefer precise wording tied to the product information you have.
+            If a limitation changes how someone should use or maintain an item,
+            make that condition easy to find rather than burying it near the end.
+          </p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold text-slate-900">Use sensory language carefully</h2>
           <p className="mt-3">
             Specific sensory words make a product easier to imagine. Depending
@@ -98,6 +153,35 @@ export default function ProductDescriptionsThatSellPage() {
             This kind of clarity builds confidence and can prevent mismatched
             expectations. It also gives customers a practical reason to choose
             your listing over one that uses only vague praise.
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Mini example: turn a verified brief into copy
+          </h2>
+          <p className="mt-3">
+            Imagine a product sheet confirms that a tote is made from cotton
+            canvas, has two shoulder straps, and includes an inside pocket. A
+            concise draft could say:
+          </p>
+          <p className="mt-3 rounded-lg border border-slate-200 p-4">
+            “Carry everyday essentials in a cotton canvas tote with two
+            shoulder straps and an inside pocket for keeping small items
+            separate.”
+          </p>
+          <p className="mt-3">
+            The sample uses only the facts in the brief. It does not claim a
+            carrying capacity, a particular weight, or a cleaning method because
+            none was supplied. If a seller later confirms dimensions or care
+            instructions, those details can be added where they help shoppers
+            compare. If they remain unknown, leave them out and answer the
+            questions the available information can support.
+          </p>
+          <p className="mt-3">
+            This is also a useful review exercise: underline each claim in the
+            draft and point to the source detail that supports it. If a phrase
+            has no source, rewrite it or remove it before the listing goes live.
           </p>
         </div>
 
@@ -132,6 +216,23 @@ export default function ProductDescriptionsThatSellPage() {
             with your verified product details and preferred tone. Edit its
             suggestions to match your brand, confirm every claim, and keep the
             final description clear, useful, and true to the item.
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Listing check before publication
+          </h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>Does the first sentence identify the item or its main use?</li>
+            <li>Can every feature and benefit be matched to a verified detail?</li>
+            <li>Are important size, care, compatibility, or limitation notes easy to find?</li>
+            <li>Does the call to action fit the actual next step on the page?</li>
+          </ul>
+          <p className="mt-3">
+            If you use a generator for a first draft, provide verified facts
+            and treat its wording as editable material. Publish only after the
+            finished description matches the product itself.
           </p>
         </div>
       </div>

@@ -27,6 +27,29 @@ export default function ReviewTipsPage() {
       </div>
 
       <div className="mt-10 space-y-8 text-base leading-7 text-slate-600">
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Start with a review queue
+          </h2>
+          <p className="mt-3">
+            Before polishing sentences, decide which parts deserve attention
+            first. A smooth paragraph is not ready if its central claim is
+            wrong. Mark the draft, then work through this queue:
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5">
+            <li>Names, dates, prices, measurements, and other checkable details.</li>
+            <li>Claims that could change a reader’s decision or actions.</li>
+            <li>Quotations, citations, and statements attributed to a source.</li>
+            <li>Advice involving health, money, law, safety, or personal risk.</li>
+            <li>Any line that sounds unlike the organization or person publishing it.</li>
+          </ul>
+          <p className="mt-3">
+            Keep a note beside uncertain claims rather than silently accepting
+            them. That makes it easier to separate facts you have verified
+            from language that still needs a source or a rewrite.
+          </p>
+        </div>
+
         <div>
           <h2 className="text-xl font-semibold text-slate-900">AI output can sound confident and be wrong</h2>
           <p className="mt-3">
@@ -37,6 +60,43 @@ export default function ReviewTipsPage() {
             details, and any statement that could affect a reader&apos;s decision.
             For current events or specialized subjects, go back to reliable
             primary sources and confirm the information yourself.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-slate-900">
+            Trace each important claim to evidence
+          </h2>
+          <p className="mt-3">
+            Review factual sentences individually instead of treating a whole
+            answer as either reliable or unreliable. For each claim, ask what
+            evidence would make it safe to publish and whether you have that
+            evidence. A practical pass looks like this:
+          </p>
+          <ol className="mt-4 list-decimal space-y-2 pl-5">
+            <li>
+              Mark the sentence’s factual core. Separate a measurable claim
+              from the explanation or opinion around it.
+            </li>
+            <li>
+              Identify the source that could verify it, such as an official
+              document, a product specification, or the original research.
+            </li>
+            <li>
+              Compare the draft with that source. Check the date, scope,
+              conditions, and whether the wording overstates what was found.
+            </li>
+            <li>
+              Keep, qualify, or remove the claim. If you cannot confirm it,
+              do not leave it in simply because it reads smoothly.
+            </li>
+          </ol>
+          <p className="mt-3">
+            For example, a draft might say a service “works with every device.”
+            A product page may support only a list of tested formats or
+            operating systems. Replace the universal statement with the
+            verified compatibility details. The narrower sentence is more
+            useful because a reader can compare it with their own situation.
           </p>
         </div>
 
@@ -79,6 +139,50 @@ export default function ReviewTipsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold text-slate-900">
+            Check what the draft leaves out
+          </h2>
+          <p className="mt-3">
+            Reviewing is not only about catching false statements. A draft may
+            omit a limit, a necessary condition, or a step the reader needs in
+            order to use the advice. Compare the response with the original
+            request and source material. Ask whether it answers every part,
+            whether a caveat was lost during summarizing, and whether the
+            sequence of instructions is complete. When a topic has risks,
+            include the boundary that changes how a reader should act. Do not
+            let a short answer appear more certain than its evidence.
+          </p>
+          <p className="mt-3">
+            Quotations need a separate check. Confirm the words against the
+            original recording, document, or approved source, and make sure
+            the surrounding context has not changed their meaning. If you
+            cannot locate the source, remove quotation marks and rewrite the
+            point as a qualified summary only when you can independently
+            support it.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-slate-900">
+            Keep a compact source log
+          </h2>
+          <p className="mt-3">
+            When an article relies on several references, note which source
+ supports each important statement. A simple working list can include the
+ claim, the source title or link, the date you checked it, and any limits in
+ the source. This is especially useful when the draft is revised later:
+ another editor can see what was verified instead of repeating the research.
+ Do not treat a citation generated by a model as evidence until you locate
+ the actual material and confirm it says what the draft claims.
+          </p>
+          <p className="mt-3">
+            Keep quotations, paraphrases, and your own interpretation distinct.
+            That makes attribution clearer and helps you notice when a summary
+            has moved beyond what the source supports.
+          </p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold text-slate-900">Think of AI as a first draft</h2>
           <p className="mt-3">
             The most useful mindset is to treat AI-generated text as working
@@ -89,6 +193,29 @@ export default function ReviewTipsPage() {
             AI supports better work without replacing the human responsibility behind
             it. If a result is not right, revise the request or start over rather
             than forcing a weak draft into publication.
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-slate-200 p-5">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Decide whether to publish, revise, or hold
+          </h2>
+          <p className="mt-3">
+            Finish with a decision, not just a spellcheck. Publish when the
+            important claims are supported, the audience can follow the
+            reasoning, and the language represents the intended voice. Revise
+            when the facts are sound but the structure, tone, or level of detail
+            needs work. Hold the draft when a high-impact claim remains
+            unverified or the source material is missing.
+          </p>
+          <p className="mt-3">
+            A rewriting tool can help test a clearer or shorter version of a
+            sentence, but it cannot supply missing evidence. If you use the{" "}
+            <Link href="/tools/text-rewriter" className="font-semibold text-brand-600 hover:underline">
+              Text Rewriter
+            </Link>
+            , compare its wording with the verified source and keep only edits
+            that preserve the meaning.
           </p>
         </div>
       </div>
